@@ -1,0 +1,4 @@
+# Used by the GitHub Action / local collector (scraper/collect.py).
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.2

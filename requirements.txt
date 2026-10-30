@@ -1,0 +1,2 @@
+# Used by the Vercel function (api/index.py). Keep this lean.
+fastapi>=0.115

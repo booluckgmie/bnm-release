@@ -1,0 +1,168 @@
+{
+ "total_stored": 810,
+ "updated_at": "2026-10-30T02:23:56+00:00",
+ "years": {
+  "2009": {
+   "errors": 0,
+   "listed": 14,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 1,
+   "ok": 13,
+   "stored": 14
+  },
+  "2010": {
+   "errors": 0,
+   "listed": 30,
+   "listing_error": null,
+   "not_an_article": 1,
+   "not_found": 0,
+   "ok": 29,
+   "stored": 30
+  },
+  "2011": {
+   "errors": 0,
+   "listed": 36,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 36,
+   "stored": 36
+  },
+  "2012": {
+   "errors": 0,
+   "listed": 39,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 39,
+   "stored": 39
+  },
+  "2013": {
+   "errors": 0,
+   "listed": 38,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 38,
+   "stored": 38
+  },
+  "2014": {
+   "errors": 0,
+   "listed": 40,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 40,
+   "stored": 40
+  },
+  "2015": {
+   "errors": 0,
+   "listed": 54,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 54,
+   "stored": 54
+  },
+  "2016": {
+   "errors": 0,
+   "listed": 59,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 59,
+   "stored": 59
+  },
+  "2017": {
+   "errors": 0,
+   "listed": 78,
+   "listing_error": null,
+   "not_an_article": 2,
+   "not_found": 0,
+   "ok": 76,
+   "stored": 78
+  },
+  "2018": {
+   "errors": 0,
+   "listed": 64,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 64,
+   "stored": 64
+  },
+  "2019": {
+   "errors": 0,
+   "listed": 62,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 62,
+   "stored": 62
+  },
+  "2020": {
+   "errors": 0,
+   "listed": 50,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 50,
+   "stored": 50
+  },
+  "2021": {
+   "errors": 0,
+   "listed": 34,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 34,
+   "stored": 34
+  },
+  "2022": {
+   "errors": 0,
+   "listed": 30,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 30,
+   "stored": 30
+  },
+  "2023": {
+   "errors": 0,
+   "listed": 30,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 30,
+   "stored": 30
+  },
+  "2024": {
+   "errors": 0,
+   "listed": 59,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 59,
+   "stored": 59
+  },
+  "2025": {
+   "errors": 0,
+   "listed": 48,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 48,
+   "stored": 48
+  },
+  "2026": {
+   "errors": 0,
+   "listed": 45,
+   "listing_error": null,
+   "not_an_article": 0,
+   "not_found": 0,
+   "ok": 45,
+   "stored": 45
+  }
+ }
+}
