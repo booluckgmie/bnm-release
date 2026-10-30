@@ -9,6 +9,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
+from urllib.parse import parse_qsl, urlencode
 
 from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -26,19 +27,31 @@ app = FastAPI(
 )
 
 
-class StripPrefix:
-    """Vercel's rewrite to /api/index can reach the app as /api/index/...; serve those at /... ."""
+class RestorePath:
+    """Vercel hands the function the rewrite destination (/api/index), not the requested URL.
+
+    vercel.json forwards the requested path as ?__p=<path>; put it back before routing.
+    Direct hits on /api/index[/...] are served at /... as a fallback.
+    """
 
     def __init__(self, inner):
         self.inner = inner
 
     async def __call__(self, scope, receive, send):
         if scope["type"] == "http":
-            for prefix in ("/api/index", "/api"):
-                path = scope["path"]
-                if path == prefix or path.startswith(prefix + "/"):
-                    scope = {**scope, "path": path[len(prefix):] or "/"}
-                    break
+            pairs = parse_qsl(scope.get("query_string", b"").decode(), keep_blank_values=True)
+            forwarded = next((v for k, v in pairs if k == "__p"), None)
+            path = scope["path"]
+            if forwarded is not None:
+                path = "/" + forwarded.lstrip("/")
+                rest = [(k, v) for k, v in pairs if k != "__p"]
+                scope = {**scope, "query_string": urlencode(rest).encode()}
+            else:
+                for prefix in ("/api/index", "/api"):
+                    if path == prefix or path.startswith(prefix + "/"):
+                        path = path[len(prefix):] or "/"
+                        break
+            scope = {**scope, "path": path}
         await self.inner(scope, receive, send)
 
 
@@ -172,5 +185,5 @@ def changes(
     return {"total": len(events), "data": events[:limit]}
 
 
-# Vercel serves the ASGI callable named `app`; wrap it so rewritten paths resolve.
-app = StripPrefix(app)
+# Vercel serves the ASGI callable named `app`; wrap it so the requested path is restored.
+app = RestorePath(app)

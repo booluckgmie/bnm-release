@@ -1,4 +1,4 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }],
+  "rewrites": [{ "source": "/:path*", "destination": "/api/index?__p=/:path*" }],
   "functions": { "api/index.py": { "includeFiles": "{data,web}/**" } }
 }
