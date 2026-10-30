@@ -9,9 +9,11 @@ import json
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
+from urllib.parse import parse_qsl, urlencode
 
 from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 CACHE = "public, s-maxage=900, stale-while-revalidate=3600"
@@ -23,6 +25,36 @@ app = FastAPI(
                 "(https://www.bnm.gov.my/notices-announcements). Not affiliated with BNM; "
                 "always confirm against the source `url` on each record.",
 )
+
+
+class RestorePath:
+    """Vercel hands the function the rewrite destination (/api/index), not the requested URL.
+
+    vercel.json forwards the requested path as ?__p=<path>; put it back before routing.
+    Direct hits on /api/index[/...] are served at /... as a fallback.
+    """
+
+    def __init__(self, inner):
+        self.inner = inner
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] == "http":
+            pairs = parse_qsl(scope.get("query_string", b"").decode(), keep_blank_values=True)
+            forwarded = next((v for k, v in pairs if k == "__p"), None)
+            path = scope["path"]
+            if forwarded is not None:
+                path = "/" + forwarded.lstrip("/")
+                rest = [(k, v) for k, v in pairs if k != "__p"]
+                scope = {**scope, "query_string": urlencode(rest).encode()}
+            else:
+                for prefix in ("/api/index", "/api"):
+                    if path == prefix or path.startswith(prefix + "/"):
+                        path = path[len(prefix):] or "/"
+                        break
+            scope = {**scope, "path": path}
+        await self.inner(scope, receive, send)
+
+
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET"], allow_headers=["*"])
 
 
@@ -54,14 +86,20 @@ def _set_cache(resp: Response) -> None:
 
 
 # --------------------------------------------------------------------- endpoints
-@app.get("/", tags=["meta"])
+@app.get("/", include_in_schema=False)
+def home():
+    page = DATA.parent / "web" / "index.html"
+    return HTMLResponse(page.read_text(encoding="utf-8"), headers={"Cache-Control": CACHE})
+
+
+@app.get("/info", tags=["meta"])
 def root(response: Response):
     _set_cache(response)
     return {
         "name": "BNM Public Notices API (unofficial)",
         "data_updated_at": coverage().get("updated_at"),
         "notices": len(index()),
-        "endpoints": ["/notices", "/notices/{id}", "/years", "/changes", "/health", "/docs"],
+        "endpoints": ["/", "/notices", "/notices/{id}", "/years", "/changes", "/health", "/docs"],
     }
 
 
@@ -145,3 +183,7 @@ def changes(
         events = [e for e in events if e["event_type"] == event_type]
     events.reverse()
     return {"total": len(events), "data": events[:limit]}
+
+
+# Vercel serves the ASGI callable named `app`; wrap it so the requested path is restored.
+app = RestorePath(app)
