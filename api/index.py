@@ -12,6 +12,7 @@ from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 CACHE = "public, s-maxage=900, stale-while-revalidate=3600"
@@ -23,6 +24,24 @@ app = FastAPI(
                 "(https://www.bnm.gov.my/notices-announcements). Not affiliated with BNM; "
                 "always confirm against the source `url` on each record.",
 )
+
+
+class StripPrefix:
+    """Vercel's rewrite to /api/index can reach the app as /api/index/...; serve those at /... ."""
+
+    def __init__(self, inner):
+        self.inner = inner
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] == "http":
+            for prefix in ("/api/index", "/api"):
+                path = scope["path"]
+                if path == prefix or path.startswith(prefix + "/"):
+                    scope = {**scope, "path": path[len(prefix):] or "/"}
+                    break
+        await self.inner(scope, receive, send)
+
+
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET"], allow_headers=["*"])
 
 
@@ -54,14 +73,20 @@ def _set_cache(resp: Response) -> None:
 
 
 # --------------------------------------------------------------------- endpoints
-@app.get("/", tags=["meta"])
+@app.get("/", include_in_schema=False)
+def home():
+    page = DATA.parent / "web" / "index.html"
+    return HTMLResponse(page.read_text(encoding="utf-8"), headers={"Cache-Control": CACHE})
+
+
+@app.get("/info", tags=["meta"])
 def root(response: Response):
     _set_cache(response)
     return {
         "name": "BNM Public Notices API (unofficial)",
         "data_updated_at": coverage().get("updated_at"),
         "notices": len(index()),
-        "endpoints": ["/notices", "/notices/{id}", "/years", "/changes", "/health", "/docs"],
+        "endpoints": ["/", "/notices", "/notices/{id}", "/years", "/changes", "/health", "/docs"],
     }
 
 
@@ -145,3 +170,7 @@ def changes(
         events = [e for e in events if e["event_type"] == event_type]
     events.reverse()
     return {"total": len(events), "data": events[:limit]}
+
+
+# Vercel serves the ASGI callable named `app`; wrap it so rewritten paths resolve.
+app = StripPrefix(app)

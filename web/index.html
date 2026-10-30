@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BNM Notices</title>
+<style>
+  :root { --bg:#fff; --fg:#1b1f24; --muted:#5b6670; --line:#d9dee3; --card:#f6f8fa; --accent:#0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1317; --fg:#e6e9ec; --muted:#98a3ad; --line:#2a323a; --card:#171d23; --accent:#6cb2ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.4rem; margin:0 0 2px; }
+  .sub { color:var(--muted); font-size:.875rem; margin:0 0 16px; }
+  a { color:var(--accent); }
+  form { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-bottom:12px; }
+  form .wide { grid-column:1/-1; }
+  label { display:block; font-size:.75rem; color:var(--muted); margin-bottom:2px; }
+  input, select, button { width:100%; font:inherit; color:var(--fg); background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 10px; }
+  .check { display:flex; align-items:center; gap:8px; padding-top:20px; }
+  .check input { width:auto; }
+  button { cursor:pointer; width:auto; }
+  button:disabled { opacity:.5; cursor:default; }
+  #status { color:var(--muted); font-size:.875rem; margin:12px 0; }
+  ul { list-style:none; margin:0; padding:0; }
+  li { border:1px solid var(--line); border-radius:8px; margin-bottom:8px; background:var(--card); }
+  .row { display:block; width:100%; text-align:left; background:none; border:0; padding:12px 14px; }
+  .row .t { font-weight:600; }
+  .row .m { color:var(--muted); font-size:.8125rem; margin-top:2px; }
+  .detail { padding:0 14px 14px; border-top:1px solid var(--line); }
+  .detail pre { white-space:pre-wrap; word-wrap:break-word; font:inherit; font-size:.9375rem; max-height:420px; overflow:auto; margin:12px 0; }
+  .pager { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:16px; }
+  footer { margin-top:32px; color:var(--muted); font-size:.8125rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>BNM Public Notices</h1>
+  <p class="sub">Unofficial mirror of <a href="https://www.bnm.gov.my/notices-announcements">Bank Negara Malaysia notices</a>. <span id="updated"></span></p>
+
+  <form id="f">
+    <div class="wide"><label for="q">Search</label><input id="q" type="search" placeholder="e.g. Shariah, e-money, penalty" autocomplete="off"></div>
+    <div><label for="year">Year</label><select id="year"><option value="">All years</option></select></div>
+    <div><label for="from">From</label><input id="from" type="date"></div>
+    <div><label for="to">To</label><input id="to" type="date"></div>
+    <div><label for="sort">Sort</label><select id="sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></div>
+    <div class="check"><input id="body" type="checkbox"><label for="body" style="margin:0">Search body text</label></div>
+    <div class="check"><input id="att" type="checkbox"><label for="att" style="margin:0">Has attachments</label></div>
+  </form>
+
+  <div id="status" role="status" aria-live="polite"></div>
+  <ul id="list"></ul>
+  <div class="pager">
+    <button id="prev" type="button">&larr; Newer</button>
+    <span id="page"></span>
+    <button id="next" type="button">Older &rarr;</button>
+  </div>
+
+  <footer>JSON API: <a href="/docs">/docs</a> &middot; <a href="/notices?limit=5">/notices</a> &middot; <a href="/years">/years</a> &middot; <a href="/changes">/changes</a>. Always confirm against the source link on each notice.</footer>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const LIMIT = 20;
+let offset = 0, total = 0, timer, seq = 0;
+
+function el(tag, props, ...kids) {
+  const n = Object.assign(document.createElement(tag), props || {});
+  kids.forEach(k => n.append(k));
+  return n;
+}
+
+async function load() {
+  const my = ++seq;
+  const p = new URLSearchParams({ limit: LIMIT, offset, sort: $("sort").value });
+  if ($("q").value.trim().length >= 2) { p.set("q", $("q").value.trim()); if ($("body").checked) p.set("scope", "all"); }
+  if ($("year").value) p.set("year", $("year").value);
+  if ($("from").value) p.set("date_from", $("from").value);
+  if ($("to").value) p.set("date_to", $("to").value);
+  if ($("att").checked) p.set("has_attachments", "true");
+  $("status").textContent = "Loading…";
+  try {
+    const r = await fetch("/notices?" + p);
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json();
+    if (my !== seq) return;
+    total = d.total;
+    render(d.data);
+  } catch (e) {
+    if (my === seq) $("status").textContent = "Could not load notices (" + e.message + ").";
+  }
+}
+
+function render(rows) {
+  const ul = $("list"); ul.replaceChildren();
+  $("status").textContent = total ? total + " notice" + (total === 1 ? "" : "s") : "No notices match.";
+  rows.forEach(n => {
+    const row = el("button", { className: "row", type: "button" },
+      el("div", { className: "t", textContent: n.title }),
+      el("div", { className: "m", textContent: n.published_date + (n.attachment_count ? " · " + n.attachment_count + " attachment" + (n.attachment_count > 1 ? "s" : "") : "") }));
+    const li = el("li", {}, row);
+    let box = null;
+    row.addEventListener("click", async () => {
+      if (box) { box.remove(); box = null; return; }
+      box = el("div", { className: "detail", textContent: "Loading…" });
+      li.append(box);
+      try {
+        const r = await fetch("/notices/" + encodeURIComponent(n.id));
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        const d = await r.json();
+        box.replaceChildren(
+          el("pre", { textContent: d.body_text || "(no body text stored)" }),
+          el("a", { href: d.url, target: "_blank", rel: "noopener", textContent: "Open on bnm.gov.my" }),
+          ...(d.attachments || []).flatMap(a => [" · ", el("a", { href: a.url, target: "_blank", rel: "noopener", textContent: (a.label || a.filename) + " (" + a.ext + ")" })]));
+      } catch (e) { box.textContent = "Could not load notice (" + e.message + ")."; }
+    });
+    ul.append(li);
+  });
+  const from = total ? offset + 1 : 0;
+  $("page").textContent = from + "–" + Math.min(offset + LIMIT, total) + " of " + total;
+  $("prev").disabled = offset === 0;
+  $("next").disabled = offset + LIMIT >= total;
+}
+
+function reset() { offset = 0; load(); }
+$("f").addEventListener("submit", e => { e.preventDefault(); reset(); });
+$("q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(reset, 300); });
+["year", "from", "to", "sort", "body", "att"].forEach(id => $(id).addEventListener("change", reset));
+$("prev").addEventListener("click", () => { offset = Math.max(0, offset - LIMIT); load(); window.scrollTo(0, 0); });
+$("next").addEventListener("click", () => { offset += LIMIT; load(); window.scrollTo(0, 0); });
+
+fetch("/years").then(r => r.json()).then(c => {
+  Object.keys(c.years || {}).sort().reverse().forEach(y => $("year").append(el("option", { value: y, textContent: y })));
+  if (c.updated_at) $("updated").textContent = "Data updated " + c.updated_at.slice(0, 10) + ".";
+}).catch(() => {});
+load();
+</script>
+</body>
+</html>
