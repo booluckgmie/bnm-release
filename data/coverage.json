@@ -1,6 +1,6 @@
 {
  "total_stored": 810,
- "updated_at": "2026-10-30T10:20:46+00:00",
+ "updated_at": "2026-11-01T16:59:27+00:00",
  "years": {
   "2009": {
    "errors": 0,
@@ -157,11 +157,11 @@
   },
   "2026": {
    "errors": 0,
-   "listed": 0,
-   "listing_error": "HTTP 403",
+   "listed": 45,
+   "listing_error": null,
    "not_an_article": 0,
    "not_found": 0,
-   "ok": 0,
+   "ok": 45,
    "stored": 45
   }
  }
