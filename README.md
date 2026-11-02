@@ -4,7 +4,7 @@ Mirrors Bank Negara Malaysia's [Public Notices](https://www.bnm.gov.my/notices-a
 (2009 → present) into versioned JSON, and serves it as a read-only JSON API with a simple
 search page.
 
-- **Live site:** <https://kahoot-alt-5sxp-my-ketapang.vercel.app> (search page at `/`, API docs at `/docs`)
+- **Live site:** <https://bnm-release.vercel.app> (search page at `/`, API docs at `/docs`)
 - **Dataset:** 810 notices across 2009–2026, committed in `data/`
 - **Not affiliated with BNM.** Always confirm against the source `url` on each record.
 
@@ -141,5 +141,3 @@ These cost real debugging time; the collector already handles them.
   years have a handful of `not_found` / `not_an_article` entries (2009, 2010, 2017).
 - If data changes often, the frequent commits could hit your Vercel plan's deployment limits;
   consider an hourly discovery cron (`0 * * * *`).
-- The Vercel project is currently named `kahoot-alt-5sxp`; rename it in project settings if you
-  want the URL to match the repo.
