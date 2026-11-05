@@ -6,8 +6,13 @@ Each year page is a single, non-paginated table of  date | title | article URL.
 Article pages hold the body in <div class="journal-content-article"> and
 attachments as links under /documents/...
 
+A second source covers Monetary Policy Statements (OPR decisions): one table at
+https://www.bnm.gov.my/monetary-stability/opr-decisions, each row linking to a statement article
+at /-/monetary-policy-statement-DDMMYYYY. These records carry category "mps", opr_change and opr_level.
+
 Output (all under ./data, committed to git):
   notices/{year}.json   full records incl. body_text
+  mps/{year}.json       Monetary Policy Statements, same record shape
   index.json            same records without body_text (fast list/search)
   changes.jsonl         append-only event log (notice.created / notice.updated / ...)
   coverage.json         per-year counts + failures, for reconciliation
@@ -18,6 +23,8 @@ Usage:
   python -m scraper.collect --years 2015-2018    # specific range
   python -m scraper.collect --recheck-days 45    # re-fetch recent articles to detect edits
   python -m scraper.collect --listing-only       # discovery only, no article fetch
+  python -m scraper.collect --mps-only           # only Monetary Policy Statements
+  python -m scraper.collect --no-mps             # skip Monetary Policy Statements
 """
 from __future__ import annotations
 
@@ -42,6 +49,7 @@ from urllib3.util.retry import Retry
 
 BASE = "https://www.bnm.gov.my"
 YEAR_URL = BASE + "/notices-announcements/-/tag/notices-{year}"
+OPR_URL = BASE + "/monetary-stability/opr-decisions"
 FIRST_YEAR = 2009
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.environ.get("BNM_DATA_DIR", ROOT / "data"))
@@ -130,6 +138,47 @@ def parse_listing(html: str, year: int) -> list[dict]:
         items.append({
             "id": notice_id(url), "url": url, "link_url": link_url,
             "title": _clean(label), "published_date": d.isoformat(), "year": d.year,
+        })
+    return items
+
+
+def mps_title(d: date, change: str, level: str) -> str:
+    when = f"{d.day} {d:%b %Y}"
+    try:
+        delta = float(change)
+    except ValueError:
+        return f"Monetary Policy Statement, {when}"
+    if delta == 0:
+        move = f"OPR unchanged at {level}%"
+    else:
+        move = f"OPR {'raised' if delta > 0 else 'cut'} by {abs(round(delta * 100))} bps to {level}%"
+    return f"Monetary Policy Statement, {when}: {move}"
+
+
+def parse_opr_listing(html: str) -> list[dict]:
+    """Rows of the OPR Decisions table: date | change in OPR | new OPR level | link to the statement."""
+    soup = BeautifulSoup(html, "lxml")
+    items, seen = [], set()
+    for tr in soup.select("tr"):
+        tds = tr.find_all("td")
+        if len(tds) < 4:
+            continue
+        try:
+            d = datetime.strptime(_clean(tds[0].get_text()), "%d %b %Y").date()
+        except ValueError:
+            continue
+        a = tds[3].find("a", href=True)
+        if a is None:
+            continue
+        url = urldefrag(urljoin(BASE, a["href"]))[0]
+        if url in seen:
+            continue
+        seen.add(url)
+        change, level = _clean(tds[1].get_text()), _clean(tds[2].get_text())
+        items.append({
+            "id": notice_id(url), "url": url, "link_url": url,
+            "title": mps_title(d, change, level), "published_date": d.isoformat(), "year": d.year,
+            "category": "mps", "opr_change": change, "opr_level": level,
         })
     return items
 
@@ -325,17 +374,108 @@ def process_year(client: Client, year: int, args, events: list[dict]) -> dict:
     return stats
 
 
+def process_mps(client: Client, args, events: list[dict]) -> dict:
+    """Monetary Policy Statements. Same lifecycle as process_year (create / edit / removal), kept
+    separate so statements never count as 'removed' from the notices listings and vice versa."""
+    stats = {"listed": 0, "stored": 0, "ok": 0, "errors": 0, "created": 0, "updated": 0, "removed": 0,
+             "listing_error": None}
+    existing = {}
+    for f in sorted((DATA / "mps").glob("*.json")):
+        existing.update({r["id"]: r for r in read_json(f, [])})
+    try:
+        resp = client.get(OPR_URL)
+        if resp.status_code != 200:
+            raise RuntimeError(f"HTTP {resp.status_code}")
+        listing = parse_opr_listing(resp.text)
+        if not listing:
+            raise RuntimeError("OPR listing parsed to 0 rows (layout change?)")
+    except Exception as e:  # noqa: BLE001
+        log.error("MPS listing failed: %s", e)
+        stats["listing_error"] = str(e)
+        stats["stored"] = len(existing)
+        return stats  # keep existing data untouched
+
+    if args.years:
+        wanted = set(parse_years(args.years))
+        listing = [i for i in listing if i["year"] in wanted]
+    stats["listed"] = len(listing)
+    ts = now_iso()
+    recheck_cutoff = date.today() - timedelta(days=args.recheck_days)
+    listed_ids = set()
+
+    for item in listing[: args.limit or None]:
+        listed_ids.add(item["id"])
+        rec = existing.get(item["id"])
+        if rec is None:
+            rec = {**item, "first_seen_at": ts, "last_changed_at": ts, "listed": True}
+            if not args.listing_only:
+                fetch_article(client, rec)
+            existing[rec["id"]] = rec
+            stats["created"] += 1
+            events.append(_event("notice.created", rec, ts))
+            for a in rec.get("attachments", []):
+                events.append(_event("attachment.created", rec, ts, attachment=a["url"]))
+            continue
+
+        changed = False
+        rec["listed"] = True
+        for k in ("title", "published_date", "link_url", "opr_change", "opr_level"):
+            if rec.get(k) != item[k]:
+                rec[k], changed = item[k], True
+        rec["year"], rec["category"] = item["year"], "mps"
+
+        due = (not args.listing_only and (
+            rec.get("fetch_status") in ("error", None)
+            or args.recheck_all
+            or date.fromisoformat(rec["published_date"]) >= recheck_cutoff))
+        if due:
+            before_atts = {a["url"] for a in rec.get("attachments", [])}
+            before_hash, before_status = rec.get("content_hash"), rec.get("fetch_status")
+            fetch_article(client, rec)
+            if rec["fetch_status"] != "error" and before_status != "error" and rec.get("content_hash") != before_hash:
+                changed = True
+                after_atts = {a["url"] for a in rec["attachments"]}
+                for u in sorted(after_atts - before_atts):
+                    events.append(_event("attachment.created", rec, ts, attachment=u))
+                for u in sorted(before_atts - after_atts):
+                    events.append(_event("attachment.removed", rec, ts, attachment=u))
+        if changed:
+            rec["last_changed_at"] = ts
+            stats["updated"] += 1
+            events.append(_event("notice.updated", rec, ts))
+
+    if not args.limit and not args.years:
+        for nid, rec in existing.items():
+            if nid not in listed_ids and rec.get("listed", True):
+                rec["listed"], rec["last_changed_at"] = False, ts
+                stats["removed"] += 1
+                events.append(_event("notice.removed", rec, ts))
+
+    by_year: dict[int, list[dict]] = {}
+    for r in existing.values():
+        by_year.setdefault(r["year"], []).append(r)
+    for y, rows in by_year.items():
+        rows.sort(key=lambda r: (r["published_date"], r["id"]), reverse=True)
+        write_json(DATA / "mps" / f"{y}.json", rows)
+    stats["stored"] = len(existing)
+    stats["ok"] = sum(r.get("fetch_status") == "ok" for r in existing.values())
+    stats["errors"] = sum(r.get("fetch_status") == "error" for r in existing.values())
+    return stats
+
+
 def _event(kind: str, rec: dict, ts: str, **extra) -> dict:
     return {"ts": ts, "event_type": kind, "notice_id": rec["id"], "title": rec["title"],
             "published_date": rec["published_date"], "url": rec["url"],
-            "historical": is_historical(rec["published_date"]), **extra}
+            "historical": is_historical(rec["published_date"]),
+            **({"category": rec["category"]} if rec.get("category") else {}), **extra}
 
 
 def rebuild_index() -> int:
     rows = []
-    for f in sorted((DATA / "notices").glob("*.json")):
+    for f in sorted([*(DATA / "notices").glob("*.json"), *(DATA / "mps").glob("*.json")]):
         for r in read_json(f, []):
             slim = {k: v for k, v in r.items() if k != "body_text"}
+            slim.setdefault("category", "notice")
             slim["body_length"] = len(r.get("body_text", ""))
             slim["attachment_count"] = len(r.get("attachments", []))
             rows.append(slim)
@@ -353,9 +493,13 @@ def append_events(events: list[dict]) -> None:
             fh.write(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n")
 
 
-def update_coverage(all_stats: list[dict]) -> None:
+def update_coverage(all_stats: list[dict], mps_stats: dict | None = None) -> None:
     old = read_json(DATA / "coverage.json", {})
     cov = {"years": dict(old.get("years", {}))}
+    if mps_stats is not None:
+        cov["mps"] = {k: mps_stats[k] for k in ("listed", "stored", "ok", "errors", "listing_error")}
+    elif "mps" in old:
+        cov["mps"] = old["mps"]
     for s in all_stats:
         # state only - per-run counters (created/updated/removed) would change every run and spam commits
         cov["years"][str(s["year"])] = {k: s[k] for k in
@@ -383,6 +527,8 @@ def main(argv=None) -> int:
                     help="re-fetch articles published within N days to detect edits")
     ap.add_argument("--recheck-all", action="store_true", help="re-fetch every article")
     ap.add_argument("--listing-only", action="store_true", help="discover only; skip article fetch")
+    ap.add_argument("--no-mps", action="store_true", help="skip Monetary Policy Statements")
+    ap.add_argument("--mps-only", action="store_true", help="only Monetary Policy Statements")
     ap.add_argument("--delay", type=float, default=0.8, help="seconds between requests")
     ap.add_argument("--limit", type=int, default=0, help="max rows per year (testing)")
     ap.add_argument("-v", "--verbose", action="store_true")
@@ -400,18 +546,24 @@ def main(argv=None) -> int:
 
     initial_import = not (DATA / "index.json").exists()  # empty store => everything is a backfill
     client, events, all_stats = Client(delay=args.delay), [], []
-    for y in years:
+    for y in ([] if args.mps_only else years):
         s = process_year(client, y, args, events)
         all_stats.append(s)
         log.info("%s listed=%s stored=%s created=%s updated=%s errors=%s%s", y, s["listed"], s["stored"],
                  s["created"], s["updated"], s["errors"], f" LISTING_ERROR={s['listing_error']}" if s["listing_error"] else "")
+
+    mps_stats = None if args.no_mps else process_mps(client, args, events)
+    if mps_stats:
+        log.info("MPS listed=%s stored=%s created=%s updated=%s errors=%s%s", mps_stats["listed"],
+                 mps_stats["stored"], mps_stats["created"], mps_stats["updated"], mps_stats["errors"],
+                 f" LISTING_ERROR={mps_stats['listing_error']}" if mps_stats["listing_error"] else "")
 
     if initial_import:
         for e in events:
             e["historical"] = True
     append_events(events)
     n = rebuild_index()
-    update_coverage(all_stats)
+    update_coverage(all_stats, mps_stats)
     log.info("done: %s events, %s notices in index", len(events), n)
     return 1 if any(s["listing_error"] and s["year"] != this_year for s in all_stats) else 0
 

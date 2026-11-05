@@ -1,11 +1,12 @@
 # BNM Public Notices API (unofficial)
 
 Mirrors Bank Negara Malaysia's [Public Notices](https://www.bnm.gov.my/notices-announcements)
-(2009 → present) into versioned JSON, and serves it as a read-only JSON API with a simple
+(2009 → present) and its [Monetary Policy Statements](https://www.bnm.gov.my/monetary-stability/opr-decisions)
+(OPR decisions, 2004 → present) into versioned JSON, and serves them as a read-only JSON API with a simple
 search page.
 
 - **Live site:** <https://kahoot-alt-5sxp-my-ketapang.vercel.app> (search page at `/`, API docs at `/docs`)
-- **Dataset:** 810 notices across 2009–2026, committed in `data/`
+- **Dataset:** 811 public notices (2009–2026) and 142 Monetary Policy Statements (2004–2026), committed in `data/`
 - **Not affiliated with BNM.** Always confirm against the source `url` on each record.
 
 ```
@@ -35,8 +36,9 @@ every data commit redeploys the site. Git history doubles as an audit trail of w
 
 | Path | Contents |
 |---|---|
-| `data/notices/{year}.json` | full records incl. `body_text`, attachments, hashes |
-| `data/index.json` | same without `body_text` (used for list/search) |
+| `data/notices/{year}.json` | public notices: full records incl. `body_text`, attachments, hashes |
+| `data/mps/{year}.json` | Monetary Policy Statements: same record shape, plus `opr_change`, `opr_level` and `category: "mps"` |
+| `data/index.json` | both sources without `body_text` (used for list/search); each row has `category` = `notice` or `mps` |
 | `data/changes.jsonl` | append-only events: `notice.created/updated/removed`, `attachment.created/removed` |
 | `data/coverage.json` | per-year listed vs stored, fetch failures — use to reconcile |
 
@@ -56,7 +58,7 @@ to the source page and PDFs.
 |---|---|
 | `GET /` | search page (HTML) |
 | `GET /info` | JSON summary: notice count, data update time, endpoint list |
-| `GET /notices` | `year`, `q`, `scope=title\|all`, `date_from`, `date_to`, `has_attachments`, `sort`, `limit` (≤200), `offset` |
+| `GET /notices` | `category=notice\|mps`, `year`, `q`, `scope=title\|all`, `date_from`, `date_to`, `has_attachments`, `sort`, `limit` (≤200), `offset` |
 | `GET /notices/{id}` | full record with body + attachment URLs; 404 if unknown |
 | `GET /changes` | `since`, `event_type`, `include_historical`, `limit` |
 | `GET /years` | coverage report |
@@ -68,10 +70,18 @@ stale-while-revalidate=3600`, so the CDN may serve data up to ~15 minutes old.
 
 ## Scope
 
-The mirror covers BNM's [Public Notices](https://www.bnm.gov.my/notices-announcements) listing only (the
-`notices-{year}` pages). Other BNM publications, such as Monetary Policy Statements (OPR decisions), press releases
-and policy documents posted elsewhere on the site, are not collected. A scheduled MPC announcement day can therefore
-pass with no new entry here.
+Two BNM sources are collected:
+
+1. **Public Notices**: the `notices-{year}` listings under
+   [notices-announcements](https://www.bnm.gov.my/notices-announcements) (`category: "notice"`).
+2. **Monetary Policy Statements**: the table at
+   [monetary-stability/opr-decisions](https://www.bnm.gov.my/monetary-stability/opr-decisions), one row per MPC
+   decision with the change in OPR and the new level, each linking to the full statement
+   (`category: "mps"`). A statement published on an MPC announcement day shows up as a live `notice.created`
+   event, and `/notices?category=mps` returns them.
+
+Not collected: other BNM publications (press releases, policy documents posted elsewhere on the site, speeches).
+BNM's older `web/guest/opr-decision-and-statement` page stops at 2022 and is not used.
 
 ## Update schedule
 
@@ -99,7 +109,8 @@ python -m scraper.collect --full          # backfill 2009 → now (~12 min, 0.8s
 uvicorn api.index:app --reload            # http://127.0.0.1:8000  (docs at /docs)
 ```
 
-Other collector modes: `--years 2015-2018`, `--recheck-days 45`, `--recheck-all`, `--listing-only`.
+Other collector modes: `--years 2015-2018`, `--recheck-days 45`, `--recheck-all`, `--listing-only`,
+`--mps-only` (statements only) and `--no-mps`.
 
 ## Deploy
 
