@@ -4,7 +4,7 @@ Mirrors the announcements and publications of Bank Negara Malaysia into versione
 read-only JSON API with a simple search page: public notices, OPR decisions (Monetary Policy Statements), policy
 documents, press releases, speeches, Financial Markets Committee statements and foreign exchange policy announcements.
 
-- **Live site:** <https://kahoot-alt-5sxp-my-ketapang.vercel.app> (search page at `/`, API docs at `/docs`)
+- **Live site:** <https://bnm-release.vercel.app> (search page at `/`, API docs at `/docs`)
 - **Dataset:** 3,536 documents (about 22 MB) committed in `data/`: 811 public notices, 142 Monetary Policy Statements,
   212 policy documents, 1,664 press releases, 619 speeches, 71 FMC statements and 17 FEP announcements
 - **Not affiliated with BNM.** Always confirm against the source `url` on each record.
@@ -172,5 +172,3 @@ These cost real debugging time; the collector already handles them.
   years have a handful of `not_found` / `not_an_article` entries (2009, 2010, 2017).
 - If data changes often, the frequent commits could hit your Vercel plan's deployment limits;
   consider an hourly discovery cron (`0 * * * *`).
-- The Vercel project is currently named `kahoot-alt-5sxp`; rename it in project settings if you
-  want the URL to match the repo.
