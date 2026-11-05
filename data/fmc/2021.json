@@ -1,0 +1,56 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20210803.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20210803.pdf"
+   }
+  ],
+  "body_hash": "699e92507bc5d5de547ed83a5eb5c247949848d3562b3a489fac7c83c44933d9",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 2/2021\nDiscussion Summary of FMC Meeting 2/2021\n1200\non\nMonday, 23 August 2021\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2021. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "b5440f738ed42252e9d42f0317e6b2de98d9c3ab088ba114bd9ad388a6380dc2",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-02-2021",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:10+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-02-2021",
+  "listed": true,
+  "published_date": "2021-08-23",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 2/2021",
+  "url": "https://www.bnm.gov.my/-/fmc-02-2021",
+  "year": 2021
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20210309.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20210309.pdf"
+   }
+  ],
+  "body_hash": "f1b1457e5fa18d2c744e7fce2eaffa9002424172088d4613ec6a8d42f340afb6",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 1/2021\nDiscussion Summary of FMC Meeting 1/2021\n1200\non\nTuesday, 9 March 2021\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2021. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "3871120923eca16c694d9fb62cd9e73b2c83dd2420f177f6e4536f114a2cb35c",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-01-2021",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:11+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-01-2021",
+  "listed": true,
+  "published_date": "2021-03-09",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 1/2021",
+  "url": "https://www.bnm.gov.my/-/fmc-01-2021",
+  "year": 2021
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20080324_B_PL_0022.pdf",
+    "label": "Guidelines on International Islamic Bank",
+    "url": "https://www.bnm.gov.my/documents/20124/0/20080324_B_PL_0022.pdf/66895dad-c15a-08fc-81f2-202ec6d83969?t=1592208357969"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "71253dd6170cc4c4ddd576cec58726abaa4fc456f2c2990d2bea595e425e0fb8",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-64454f44f745",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/0/20080324_B_PL_0022.pdf/66895dad-c15a-08fc-81f2-202ec6d83969?t=1592208357969",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2008-03-24",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Guidelines on International Islamic Bank",
+  "url": "https://www.bnm.gov.my/documents/20124/0/20080324_B_PL_0022.pdf/66895dad-c15a-08fc-81f2-202ec6d83969?t=1592208357969",
+  "year": 2008
+ }
+]

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BNM Notices</title>
+<title>BNM Notices and OPR</title>
 <style>
   :root { --bg:#fff; --fg:#1b1f24; --muted:#5b6670; --line:#d9dee3; --card:#f6f8fa; --accent:#0b5cad; }
   @media (prefers-color-scheme: dark) {
@@ -37,11 +37,12 @@
 </head>
 <body>
 <main>
-  <h1>BNM Public Notices</h1>
-  <p class="sub">Unofficial mirror of <a href="https://www.bnm.gov.my/notices-announcements">Bank Negara Malaysia notices</a>. <span id="updated"></span></p>
+  <h1>BNM Notices and OPR Decisions</h1>
+  <p class="sub">Unofficial mirror of <a href="https://www.bnm.gov.my/notices-announcements">Bank Negara Malaysia public notices</a> and <a href="https://www.bnm.gov.my/monetary-stability/opr-decisions">Monetary Policy Statements</a>. <span id="updated"></span> <span id="checked"></span></p>
 
   <form id="f">
     <div class="wide"><label for="q">Search</label><input id="q" type="search" placeholder="e.g. Shariah, e-money, penalty" autocomplete="off"></div>
+    <div><label for="cat">Type</label><select id="cat"><option value="">All types</option><option value="notice">Public notices</option><option value="policy">Policy documents</option><option value="mps">OPR / Monetary Policy Statements</option><option value="press">Press releases</option><option value="speech">Speeches</option><option value="fmc">FMC statements</option><option value="fep">FEP announcements</option></select></div>
     <div><label for="year">Year</label><select id="year"><option value="">All years</option></select></div>
     <div><label for="from">From</label><input id="from" type="date"></div>
     <div><label for="to">To</label><input id="to" type="date"></div>
@@ -76,6 +77,7 @@ async function load() {
   const my = ++seq;
   const p = new URLSearchParams({ limit: LIMIT, offset, sort: $("sort").value });
   if ($("q").value.trim().length >= 2) { p.set("q", $("q").value.trim()); if ($("body").checked) p.set("scope", "all"); }
+  if ($("cat").value) p.set("category", $("cat").value);
   if ($("year").value) p.set("year", $("year").value);
   if ($("from").value) p.set("date_from", $("from").value);
   if ($("to").value) p.set("date_to", $("to").value);
@@ -93,13 +95,19 @@ async function load() {
   }
 }
 
+const LABELS = { mps: "Monetary Policy Statement", press: "Press release", speech: "Speech", fmc: "FMC statement", fep: "FEP announcement" };
+function typeLabel(n) {
+  if (n.category === "policy") return " · " + (n.policy_type || "Policy document") + (n.sectors && n.sectors.length ? " (" + n.sectors.join(", ") + ")" : "");
+  return LABELS[n.category] ? " · " + LABELS[n.category] : "";
+}
+
 function render(rows) {
   const ul = $("list"); ul.replaceChildren();
-  $("status").textContent = total ? total + " notice" + (total === 1 ? "" : "s") : "No notices match.";
+  $("status").textContent = total ? total + " result" + (total === 1 ? "" : "s") : "Nothing matches.";
   rows.forEach(n => {
     const row = el("button", { className: "row", type: "button" },
       el("div", { className: "t", textContent: n.title }),
-      el("div", { className: "m", textContent: n.published_date + (n.attachment_count ? " · " + n.attachment_count + " attachment" + (n.attachment_count > 1 ? "s" : "") : "") }));
+      el("div", { className: "m", textContent: n.published_date + typeLabel(n) + (n.attachment_count ? " · " + n.attachment_count + " attachment" + (n.attachment_count > 1 ? "s" : "") : "") }));
     const li = el("li", {}, row);
     let box = null;
     row.addEventListener("click", async () => {
@@ -111,7 +119,7 @@ function render(rows) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         const d = await r.json();
         box.replaceChildren(
-          el("pre", { textContent: d.body_text || "(no body text stored)" }),
+          d.body_text ? el("pre", { textContent: d.body_text }) : el("p", { className: "sub", textContent: (d.attachments || []).length ? "This is a listing of documents; open the files below." : "(no text stored)" }),
           el("a", { href: d.url, target: "_blank", rel: "noopener", textContent: "Open on bnm.gov.my" }),
           ...(d.attachments || []).flatMap(a => [" · ", el("a", { href: a.url, target: "_blank", rel: "noopener", textContent: (a.label || a.filename) + " (" + a.ext + ")" })]));
       } catch (e) { box.textContent = "Could not load notice (" + e.message + ")."; }
@@ -127,7 +135,7 @@ function render(rows) {
 function reset() { offset = 0; load(); }
 $("f").addEventListener("submit", e => { e.preventDefault(); reset(); });
 $("q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(reset, 300); });
-["year", "from", "to", "sort", "body", "att"].forEach(id => $(id).addEventListener("change", reset));
+["cat", "year", "from", "to", "sort", "body", "att"].forEach(id => $(id).addEventListener("change", reset));
 $("prev").addEventListener("click", () => { offset = Math.max(0, offset - LIMIT); load(); window.scrollTo(0, 0); });
 $("next").addEventListener("click", () => { offset += LIMIT; load(); window.scrollTo(0, 0); });
 
@@ -135,6 +143,16 @@ fetch("/years").then(r => r.json()).then(c => {
   Object.keys(c.years || {}).sort().reverse().forEach(y => $("year").append(el("option", { value: y, textContent: y })));
   if (c.updated_at) $("updated").textContent = "Data updated " + c.updated_at.slice(0, 10) + ".";
 }).catch(() => {});
+function ago(iso) {
+  const m = Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 60000));
+  if (m < 60) return m + " min ago";
+  if (m < 2880) return Math.round(m / 60) + " h ago";
+  return Math.round(m / 1440) + " days ago";
+}
+fetch("https://api.github.com/repos/booluckgmie/bnm-release/actions/workflows/update.yml/runs?status=success&per_page=1")
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => { const run = d.workflow_runs && d.workflow_runs[0]; if (run) $("checked").textContent = "Last checked BNM " + ago(run.updated_at) + "."; })
+  .catch(() => {});
 load();
 </script>
 </body>

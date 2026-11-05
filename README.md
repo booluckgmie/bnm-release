@@ -1,11 +1,12 @@
 # BNM Public Notices API (unofficial)
 
-Mirrors Bank Negara Malaysia's [Public Notices](https://www.bnm.gov.my/notices-announcements)
-(2009 → present) into versioned JSON, and serves it as a read-only JSON API with a simple
-search page.
+Mirrors the announcements and publications of Bank Negara Malaysia into versioned JSON, and serves them as a
+read-only JSON API with a simple search page: public notices, OPR decisions (Monetary Policy Statements), policy
+documents, press releases, speeches, Financial Markets Committee statements and foreign exchange policy announcements.
 
 - **Live site:** <https://bnm-release.vercel.app> (search page at `/`, API docs at `/docs`)
-- **Dataset:** 810 notices across 2009–2026, committed in `data/`
+- **Dataset:** 3,536 documents (about 22 MB) committed in `data/`: 811 public notices, 142 Monetary Policy Statements,
+  212 policy documents, 1,664 press releases, 619 speeches, 71 FMC statements and 17 FEP announcements
 - **Not affiliated with BNM.** Always confirm against the source `url` on each record.
 
 ```
@@ -35,8 +36,11 @@ every data commit redeploys the site. Git history doubles as an audit trail of w
 
 | Path | Contents |
 |---|---|
-| `data/notices/{year}.json` | full records incl. `body_text`, attachments, hashes |
-| `data/index.json` | same without `body_text` (used for list/search) |
+| `data/notices/{year}.json` | public notices: full records incl. `body_text`, attachments, hashes |
+| `data/mps/{year}.json` | Monetary Policy Statements: same record shape, plus `opr_change`, `opr_level` and `category: "mps"` |
+| `data/policy/{year}.json` | policy documents, exposure drafts, discussion papers: `policy_type`, `sectors`, the PDFs as `attachments`, no body text |
+| `data/press/`, `data/speeches/`, `data/fmc/`, `data/fep/` | press releases, speeches, FMC statements, FEP announcements: same shape as notices |
+| `data/index.json` | every source without `body_text` (used for list/search); each row has a `category` |
 | `data/changes.jsonl` | append-only events: `notice.created/updated/removed`, `attachment.created/removed` |
 | `data/coverage.json` | per-year listed vs stored, fetch failures — use to reconcile |
 
@@ -56,7 +60,7 @@ to the source page and PDFs.
 |---|---|
 | `GET /` | search page (HTML) |
 | `GET /info` | JSON summary: notice count, data update time, endpoint list |
-| `GET /notices` | `year`, `q`, `scope=title\|all`, `date_from`, `date_to`, `has_attachments`, `sort`, `limit` (≤200), `offset` |
+| `GET /notices` | `category=notice\|mps\|policy\|press\|speech\|fmc\|fep`, `policy_type`, `year`, `q`, `scope=title\|all`, `date_from`, `date_to`, `has_attachments`, `sort`, `limit` (≤200), `offset` |
 | `GET /notices/{id}` | full record with body + attachment URLs; 404 if unknown |
 | `GET /changes` | `since`, `event_type`, `include_historical`, `limit` |
 | `GET /years` | coverage report |
@@ -65,6 +69,29 @@ to the source page and PDFs.
 
 Invalid parameters return 422. Responses carry `Cache-Control: public, s-maxage=900,
 stale-while-revalidate=3600`, so the CDN may serve data up to ~15 minutes old.
+
+## Scope
+
+Seven BNM sources are collected. Each document has a `category`, and `/notices?category=...` or the page's Type filter
+selects one:
+
+| `category` | Source on bnm.gov.my | Years | Notes |
+|---|---|---|---|
+| `notice` | [Public Notices](https://www.bnm.gov.my/notices-announcements) (`notices-{year}`) | 2009– | the original source |
+| `mps` | [OPR Decisions](https://www.bnm.gov.my/monetary-stability/opr-decisions) | 2004– | one row per MPC decision; `opr_change`, `opr_level` |
+| `policy` | `/standardsandguidelines`, `/insurance-takaful`, `/payment-systems` | 2000– | policy documents, exposure drafts, discussion papers; rows link straight to PDFs, so only titles and types are searchable, not the PDF text. A document listed under several sectors is stored once with all its `sectors` |
+| `press` | `/press-release-{year}` | 2009– | includes recurring items such as international reserves disclosures |
+| `speech` | `/speeches-interviews/-/tag/speeches{year}` | 2009– | |
+| `fmc` | `/committees/fmc/statements` | 2016– | Financial Markets Committee |
+| `fep` | `/fep/announcements` | 2016– | foreign exchange policy |
+
+A document that appears in two listings (many press releases are also public notices) is kept once, under the first
+source in this order: notice, mps, policy, fmc, fep, speech, press.
+
+Not collected: the Financial Consumer Alert List, procurement notices, the events calendar, the fortnightly Statement
+of Assets & Liabilities, Malay-language pages (`/ms/`), and publication PDFs (Quarterly Bulletin and similar).
+Press releases and speeches exist on the site from 1998 and 2005; the collector starts at 2009 (`--years 1998-2008 --sources press`
+fetches earlier ones).
 
 ## Update schedule
 
@@ -76,10 +103,12 @@ something changed, and each commit redeploys the site.
 | Every 30 min | `*/30 * * * *` | Discover new notices (current year; plus last year in Jan/Feb) |
 | Daily | 20:00 UTC (04:00 MYT) | Re-check notices from the last 45 days for edits |
 | Weekly | Sundays 21:00 UTC | Reconcile every year's listing (catches backdated additions) |
-| Monthly | 1st, 22:00 UTC | Re-fetch all articles to detect edits to old notices |
+| Monthly | 1st, 22:00 UTC | Re-fetch every article of every source to detect edits (about 4,000 pages, an hour or two; the job limit is 4 hours, and runs queue behind it) |
 
-A new BNM notice should appear on the site within roughly 30–40 minutes. GitHub treats scheduled
-runs as best-effort, so they can start late or be skipped under load. You can also run it by hand:
+A new BNM notice should appear within a few hours at worst; the schedule asks for every 30 minutes, but GitHub
+throttles scheduled runs (we have seen 2 to 6 hours between runs on a free repo). The search page shows when the
+collector last ran successfully, so a quiet day is distinguishable from a stuck pipeline. GitHub treats scheduled
+runs as best-effort, so they can start late or be skipped under load. If the push is rejected, the workflow retries up to 4 times. You can also run it by hand:
 Actions → *update-notices* → *Run workflow* with `mode` = `discover | recheck | reconcile | deep | backfill`.
 
 ## Run locally
@@ -90,7 +119,9 @@ python -m scraper.collect --full          # backfill 2009 → now (~12 min, 0.8s
 uvicorn api.index:app --reload            # http://127.0.0.1:8000  (docs at /docs)
 ```
 
-Other collector modes: `--years 2015-2018`, `--recheck-days 45`, `--recheck-all`, `--listing-only`.
+Other collector modes: `--years 2015-2018`, `--recheck-days 45`, `--recheck-all`, `--listing-only`, and
+`--sources mps,policy` to run only some sources (`notice,mps,policy,fmc,fep,speech,press`). A full backfill of every
+source is about 4,000 pages and takes an hour or more.
 
 ## Deploy
 
