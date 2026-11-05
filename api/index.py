@@ -159,7 +159,7 @@ def list_notices(
         needle = q.lower()
 
         def hit(r: dict) -> bool:
-            if needle in r["title"].lower():
+            if needle in r["title"].lower() or needle in (r.get("policy_type") or "").lower():
                 return True
             return scope == "all" and needle in year_file(r["year"]).get(r["id"], {}).get("body_text", "").lower()
 
