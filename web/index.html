@@ -38,7 +38,7 @@
 <body>
 <main>
   <h1>BNM Public Notices</h1>
-  <p class="sub">Unofficial mirror of <a href="https://www.bnm.gov.my/notices-announcements">Bank Negara Malaysia notices</a>. <span id="updated"></span></p>
+  <p class="sub">Unofficial mirror of <a href="https://www.bnm.gov.my/notices-announcements">Bank Negara Malaysia notices</a>. <span id="updated"></span> <span id="checked"></span></p>
 
   <form id="f">
     <div class="wide"><label for="q">Search</label><input id="q" type="search" placeholder="e.g. Shariah, e-money, penalty" autocomplete="off"></div>
@@ -135,6 +135,16 @@ fetch("/years").then(r => r.json()).then(c => {
   Object.keys(c.years || {}).sort().reverse().forEach(y => $("year").append(el("option", { value: y, textContent: y })));
   if (c.updated_at) $("updated").textContent = "Data updated " + c.updated_at.slice(0, 10) + ".";
 }).catch(() => {});
+function ago(iso) {
+  const m = Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 60000));
+  if (m < 60) return m + " min ago";
+  if (m < 2880) return Math.round(m / 60) + " h ago";
+  return Math.round(m / 1440) + " days ago";
+}
+fetch("https://api.github.com/repos/booluckgmie/bnm-release/actions/workflows/update.yml/runs?status=success&per_page=1")
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => { const run = d.workflow_runs && d.workflow_runs[0]; if (run) $("checked").textContent = "Last checked BNM " + ago(run.updated_at) + "."; })
+  .catch(() => {});
 load();
 </script>
 </body>

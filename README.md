@@ -66,6 +66,13 @@ to the source page and PDFs.
 Invalid parameters return 422. Responses carry `Cache-Control: public, s-maxage=900,
 stale-while-revalidate=3600`, so the CDN may serve data up to ~15 minutes old.
 
+## Scope
+
+The mirror covers BNM's [Public Notices](https://www.bnm.gov.my/notices-announcements) listing only (the
+`notices-{year}` pages). Other BNM publications, such as Monetary Policy Statements (OPR decisions), press releases
+and policy documents posted elsewhere on the site, are not collected. A scheduled MPC announcement day can therefore
+pass with no new entry here.
+
 ## Update schedule
 
 The `update-notices` workflow runs on these schedules (UTC). It commits to `data/` only when
@@ -78,8 +85,10 @@ something changed, and each commit redeploys the site.
 | Weekly | Sundays 21:00 UTC | Reconcile every year's listing (catches backdated additions) |
 | Monthly | 1st, 22:00 UTC | Re-fetch all articles to detect edits to old notices |
 
-A new BNM notice should appear on the site within roughly 30–40 minutes. GitHub treats scheduled
-runs as best-effort, so they can start late or be skipped under load. You can also run it by hand:
+A new BNM notice should appear within a few hours at worst; the schedule asks for every 30 minutes, but GitHub
+throttles scheduled runs (we have seen 2 to 6 hours between runs on a free repo). The search page shows when the
+collector last ran successfully, so a quiet day is distinguishable from a stuck pipeline. GitHub treats scheduled
+runs as best-effort, so they can start late or be skipped under load. If the push is rejected, the workflow retries up to 4 times. You can also run it by hand:
 Actions → *update-notices* → *Run workflow* with `mode` = `discover | recheck | reconcile | deep | backfill`.
 
 ## Run locally
