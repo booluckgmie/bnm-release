@@ -23,10 +23,18 @@
    "not_an_article": 212,
    "ok": 0,
    "stored": 212
+  },
+  "speech": {
+   "errors": 0,
+   "listed": 619,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 619,
+   "stored": 619
   }
  },
  "total_stored": 811,
- "updated_at": "2026-11-05T09:40:28+00:00",
+ "updated_at": "2026-11-05T09:53:31+00:00",
  "years": {
   "2009": {
    "errors": 0,
