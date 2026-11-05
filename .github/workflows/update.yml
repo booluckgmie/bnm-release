@@ -65,5 +65,11 @@ jobs:
             echo "no data changes"; exit 0
           fi
           git commit -m "data: update notices ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          for attempt in 1 2 3 4; do
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              exit 0
+            fi
+            echo "push failed (attempt ${attempt}); retrying"
+            sleep $((attempt * 10))
+          done
+          echo "push failed after 4 attempts"; exit 1
