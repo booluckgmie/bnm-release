@@ -16,6 +16,14 @@
    "ok": 71,
    "stored": 71
   },
+  "mps": {
+   "errors": 0,
+   "listed": 142,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 142,
+   "stored": 142
+  },
   "policy": {
    "errors": 0,
    "listed": 212,
@@ -26,7 +34,7 @@
   },
   "press": {
    "errors": 0,
-   "listed": 1664,
+   "listed": 55,
    "listing_error": null,
    "not_an_article": 0,
    "ok": 1664,
@@ -34,7 +42,7 @@
   },
   "speech": {
    "errors": 0,
-   "listed": 619,
+   "listed": 35,
    "listing_error": null,
    "not_an_article": 0,
    "ok": 619,
@@ -42,7 +50,7 @@
   }
  },
  "total_stored": 811,
- "updated_at": "2026-11-05T10:28:11+00:00",
+ "updated_at": "2026-11-05T17:00:29+00:00",
  "years": {
   "2009": {
    "errors": 0,
