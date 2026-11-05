@@ -42,7 +42,7 @@
 
   <form id="f">
     <div class="wide"><label for="q">Search</label><input id="q" type="search" placeholder="e.g. Shariah, e-money, penalty" autocomplete="off"></div>
-    <div><label for="cat">Type</label><select id="cat"><option value="">All</option><option value="notice">Public notices</option><option value="mps">OPR / Monetary Policy Statements</option></select></div>
+    <div><label for="cat">Type</label><select id="cat"><option value="">All types</option><option value="notice">Public notices</option><option value="policy">Policy documents</option><option value="mps">OPR / Monetary Policy Statements</option><option value="press">Press releases</option><option value="speech">Speeches</option><option value="fmc">FMC statements</option><option value="fep">FEP announcements</option></select></div>
     <div><label for="year">Year</label><select id="year"><option value="">All years</option></select></div>
     <div><label for="from">From</label><input id="from" type="date"></div>
     <div><label for="to">To</label><input id="to" type="date"></div>
@@ -95,13 +95,19 @@ async function load() {
   }
 }
 
+const LABELS = { mps: "Monetary Policy Statement", press: "Press release", speech: "Speech", fmc: "FMC statement", fep: "FEP announcement" };
+function typeLabel(n) {
+  if (n.category === "policy") return " · " + (n.policy_type || "Policy document") + (n.sectors && n.sectors.length ? " (" + n.sectors.join(", ") + ")" : "");
+  return LABELS[n.category] ? " · " + LABELS[n.category] : "";
+}
+
 function render(rows) {
   const ul = $("list"); ul.replaceChildren();
-  $("status").textContent = total ? total + " result" + (total === 1 ? "" : "s") : "No notices match.";
+  $("status").textContent = total ? total + " result" + (total === 1 ? "" : "s") : "Nothing matches.";
   rows.forEach(n => {
     const row = el("button", { className: "row", type: "button" },
       el("div", { className: "t", textContent: n.title }),
-      el("div", { className: "m", textContent: n.published_date + (n.category === "mps" ? " · Monetary Policy Statement" : "") + (n.attachment_count ? " · " + n.attachment_count + " attachment" + (n.attachment_count > 1 ? "s" : "") : "") }));
+      el("div", { className: "m", textContent: n.published_date + typeLabel(n) + (n.attachment_count ? " · " + n.attachment_count + " attachment" + (n.attachment_count > 1 ? "s" : "") : "") }));
     const li = el("li", {}, row);
     let box = null;
     row.addEventListener("click", async () => {
@@ -113,7 +119,7 @@ function render(rows) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         const d = await r.json();
         box.replaceChildren(
-          el("pre", { textContent: d.body_text || "(no body text stored)" }),
+          d.body_text ? el("pre", { textContent: d.body_text }) : el("p", { className: "sub", textContent: (d.attachments || []).length ? "This is a listing of documents; open the files below." : "(no text stored)" }),
           el("a", { href: d.url, target: "_blank", rel: "noopener", textContent: "Open on bnm.gov.my" }),
           ...(d.attachments || []).flatMap(a => [" · ", el("a", { href: a.url, target: "_blank", rel: "noopener", textContent: (a.label || a.filename) + " (" + a.ext + ")" })]));
       } catch (e) { box.textContent = "Could not load notice (" + e.message + ")."; }

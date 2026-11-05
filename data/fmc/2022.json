@@ -1,0 +1,56 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "FMC-Minutes-20220517.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/FMC-Minutes-20220517.pdf?s=1"
+   }
+  ],
+  "body_hash": "ddae3f5c13a525c84bcc1fa8c705e36b2fff914fca4504edc11a272b99136917",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 2/2022\nDiscussion Summary of FMC Meeting 2/2022\n1200\non\nTuesday, 17 May 2022\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2022. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "6dd6ab70558bcac895638d752e8019aa09a2bb7b42b4e7b33f3569f2e548391d",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-02-2022",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:08+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-02-2022",
+  "listed": true,
+  "published_date": "2022-05-17",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 2/2022",
+  "url": "https://www.bnm.gov.my/-/fmc-02-2022",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20220211.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20220211.pdf"
+   }
+  ],
+  "body_hash": "796f296383b101f502e93e42f1de9df9ef82685a5c0f341e5df9332fca66a092",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 1/2022\nDiscussion Summary of FMC Meeting 1/2022\n1200\non\nFriday, 11 February 2022\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2022. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "d2b2cc90b752b4265e7ce269b4680372ab0bc4bef1f1bbf45d84a0ef55f50da1",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-01-2022",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:09+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-01-2022",
+  "listed": true,
+  "published_date": "2022-02-11",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 1/2022",
+  "url": "https://www.bnm.gov.my/-/fmc-01-2022",
+  "year": 2022
+ }
+]

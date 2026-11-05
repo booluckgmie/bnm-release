@@ -1,0 +1,32 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20041002_IAT_PL_0013.pdf",
+    "label": "Internet Takaful",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20041002_IAT_PL_0013.pdf/fa4e8ea5-dfb3-5e2f-c2b8-e69e49989618?t=1592338495171"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "74f74d4002aaca91a3da44cdf4ebb6def60f58bd6c081b9166748d3f2e178094",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d051f3ca9fb8",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20041002_IAT_PL_0013.pdf/fa4e8ea5-dfb3-5e2f-c2b8-e69e49989618?t=1592338495171",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2004-10-02",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Internet Takaful",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20041002_IAT_PL_0013.pdf/fa4e8ea5-dfb3-5e2f-c2b8-e69e49989618?t=1592338495171",
+  "year": 2004
+ }
+]

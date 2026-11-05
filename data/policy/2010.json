@@ -1,0 +1,62 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20100101_B_CA_0004.pdf",
+    "label": "Risk Weighted Capital Adequacy Framework (Basel II) - Disclosure Requirements (Pillar 3)",
+    "url": "https://www.bnm.gov.my/documents/20124/0/20100101_B_CA_0004.pdf/767c808b-4fe9-58fb-a118-e4446bdd4642?t=1592210082414"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "0a6103292bff3901f30149fdeb80129c32eafd7408030e9b6d3f38ee0f034b85",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-9a3642a009dc",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/0/20100101_B_CA_0004.pdf/767c808b-4fe9-58fb-a118-e4446bdd4642?t=1592210082414",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2010-08-07",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Risk Weighted Capital Adequacy Framework (Basel II) - Disclosure Requirements (Pillar 3)",
+  "url": "https://www.bnm.gov.my/documents/20124/0/20100101_B_CA_0004.pdf/767c808b-4fe9-58fb-a118-e4446bdd4642?t=1592210082414",
+  "year": 2010
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "gl_002_6.pdf",
+    "label": "Guidelines on Property Development and Property Investment Activities by Islamic Banks",
+    "url": "https://www.bnm.gov.my/documents/20124/0/gl_002_6.pdf/48f6a2b0-c37f-b987-415d-fa0628181fd3?t=1592210582077"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "32bb4fe3d63fc94b3053598ba43fe15248e1c8c3529f53191ddf7fe8291ef8ec",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d19fa4cc686c",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/0/gl_002_6.pdf/48f6a2b0-c37f-b987-415d-fa0628181fd3?t=1592210582077",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2010-04-01",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Guidelines on Property Development and Property Investment Activities by Islamic Banks",
+  "url": "https://www.bnm.gov.my/documents/20124/0/gl_002_6.pdf/48f6a2b0-c37f-b987-415d-fa0628181fd3?t=1592210582077",
+  "year": 2010
+ }
+]

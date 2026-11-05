@@ -1,0 +1,448 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20131223_S_O_0001.pdf",
+    "label": "Murabahah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/20131223_S_O_0001.pdf/756c9ea2-9184-67d5-a227-a2fa00bef7c9?t=1592216491941"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "18f8b8613ba06c3e2a6f1b86180510fb437ae13bf3ad3292a3937000a4c63a4e",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-03a3dd046958",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/20131223_S_O_0001.pdf/756c9ea2-9184-67d5-a227-a2fa00bef7c9?t=1592216491941",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-12-23",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Murabahah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/20131223_S_O_0001.pdf/756c9ea2-9184-67d5-a227-a2fa00bef7c9?t=1592216491941",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20131216_B_PL_0043.pdf",
+    "label": "Risk-Informed Pricing",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/20131216_B_PL_0043.pdf/c0dfc80a-a83f-da90-dae9-2317689c42b9?t=1592216160990"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "997e2617d334dab051cedd675b5c5dfdcf28e6a61ed069dadfde9a7dcc4ac544",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-42bf0c9b0eea",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/20131216_B_PL_0043.pdf/c0dfc80a-a83f-da90-dae9-2317689c42b9?t=1592216160990",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-12-16",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Risk-Informed Pricing",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/20131216_B_PL_0043.pdf/c0dfc80a-a83f-da90-dae9-2317689c42b9?t=1592216160990",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20131023_IAT_PL_0032.pdf",
+    "label": "Revised BNM/APP and BNM/DIR Application Forms and Statutory Declaration Form",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20131023_IAT_PL_0032.pdf/b3beb7c0-e90d-857a-7b27-24d04a0b2514?t=1592340522166"
+   },
+   {
+    "ext": "zip",
+    "filename": "20131023_IAT_PL_0032_A01.zip",
+    "label": "Related attachment : Revised Forms",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20131023_IAT_PL_0032_A01.zip/138028e9-75cc-5196-5bf2-35157c815685?t=1592340521751"
+   },
+   {
+    "ext": "zip",
+    "filename": "20131023_IAT_PL_0032_A02.zip",
+    "label": "Related attachment : Forms related to Insurance companies",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20131023_IAT_PL_0032_A02.zip/8d934a42-cc5b-104f-dfeb-aedeac316c73?t=1592340561617"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4e001b0cd6e158d87cf7a9709adb561e782100b96e59b44db076691e9bd87cc7",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-47072bf28aca",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20131023_IAT_PL_0032.pdf/b3beb7c0-e90d-857a-7b27-24d04a0b2514?t=1592340522166",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-10-23",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Revised BNM/APP and BNM/DIR Application Forms and Statutory Declaration Form",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20131023_IAT_PL_0032.pdf/b3beb7c0-e90d-857a-7b27-24d04a0b2514?t=1592340522166",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "BNM_RH_CIR+010-3.pdf",
+    "label": "Revised BNM/APP and BNM/DIR Application Forms and Statutory Declaration Form",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/BNM_RH_CIR+010-3.pdf/0e832d4f-ea3e-59a7-0efe-b174dbc5664a?t=1592215541089"
+   },
+   {
+    "ext": "zip",
+    "filename": "BNM_RH_CIR+010-3_Revised_Forms.zip",
+    "label": "Related attachment : Revised Forms",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/BNM_RH_CIR+010-3_Revised_Forms.zip/d4a3b23d-5106-9147-dd8c-8cd15f63ed28?t=1592215567227"
+   },
+   {
+    "ext": "zip",
+    "filename": "Forms-Insurance_financial_holding_companies+%281%29.zip",
+    "label": "Related attachment : Forms related to Insurance companies",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Forms-Insurance_financial_holding_companies+%281%29.zip/a4a194d3-f08c-b970-b7d7-998e03bd7d4d?t=1607325406720"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "707ed0416ebf1b5dc6fba18dcb445c9e2ec932250e949d9deeda749b85783011",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-2be49d7d5174",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/BNM_RH_CIR+010-3.pdf/0e832d4f-ea3e-59a7-0efe-b174dbc5664a?t=1592215541089",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-10-23",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Revised BNM/APP and BNM/DIR Application Forms and Statutory Declaration Form",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/BNM_RH_CIR+010-3.pdf/0e832d4f-ea3e-59a7-0efe-b174dbc5664a?t=1592215541089",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130628_IAT_PL_0030.pdf",
+    "label": "Fit and Proper Criteria",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0030.pdf/7e3c0c90-5430-287b-3f43-e54db286ca5d?t=1592340405088"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "631a6b1fa3dc1d926cd179ab47cd4a563792c92ec82029d183c71f0127c81a3c",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-e225cff5eb25",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0030.pdf/7e3c0c90-5430-287b-3f43-e54db286ca5d?t=1592340405088",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Fit and Proper Criteria",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0030.pdf/7e3c0c90-5430-287b-3f43-e54db286ca5d?t=1592340405088",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Ft_Proper_Criteria_280613.pdf",
+    "label": "Fit and Proper Criteria",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Ft_Proper_Criteria_280613.pdf/36e078eb-0b2e-f687-597a-1d579aa2c1d9?t=1592215267023"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "507c6fae264ba650f125da6e533a38e2ecbef2a285d38eaa73856dc818c0ae2a",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d81aba894be6",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Ft_Proper_Criteria_280613.pdf/36e078eb-0b2e-f687-597a-1d579aa2c1d9?t=1592215267023",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Fit and Proper Criteria",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Ft_Proper_Criteria_280613.pdf/36e078eb-0b2e-f687-597a-1d579aa2c1d9?t=1592215267023",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130628_IAT_PL_0027.pdf",
+    "label": "Related Party Transactions",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0027.pdf/e3b7d655-80cc-c7aa-5706-ce2783c8a08a?t=1592340448902"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "da000a8b5c1a5f1257b314143373b2619fe57ee10c1a57f79846504453d16cef",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-b54376e28e00",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0027.pdf/e3b7d655-80cc-c7aa-5706-ce2783c8a08a?t=1592340448902",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Related Party Transactions",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0027.pdf/e3b7d655-80cc-c7aa-5706-ce2783c8a08a?t=1592340448902",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130628_B_PL_0035.PDF",
+    "label": "Application to be Approved as Financial Holding Company Pursuant to Sections 280(2) and 280(3) of the Financial Services Act 2013 and Section 290(1) of the Islamic Financial Services Act 2013",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/20130628_B_PL_0035.PDF/965c5619-1a39-e42c-ed56-53499bb19b30?t=1592213948603"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "1585568052f311106ed93ac390a216cf4f89184a437516294e995e8e0b2a7a64",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-a2521e841fb6",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/20130628_B_PL_0035.PDF/965c5619-1a39-e42c-ed56-53499bb19b30?t=1592213948603",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Application to be Approved as Financial Holding Company Pursuant to Sections 280(2) and 280(3) of the Financial Services Act 2013 and Section 290(1) of the Islamic Financial Services Act 2013",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/20130628_B_PL_0035.PDF/965c5619-1a39-e42c-ed56-53499bb19b30?t=1592213948603",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "gl_018_4.pdf",
+    "label": "External Auditor",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/gl_018_4.pdf/1f2367d0-fc44-c7f3-0522-9a6df4b75d07?t=1592214084006"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4519315b344d1c2163b576e063edc52c0d64d8c745535d7e32d7765769492055",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-7f09b7d740d4",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/gl_018_4.pdf/1f2367d0-fc44-c7f3-0522-9a6df4b75d07?t=1592214084006",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "External Auditor",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/gl_018_4.pdf/1f2367d0-fc44-c7f3-0522-9a6df4b75d07?t=1592214084006",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130628_IAT_PL_0029.pdf",
+    "label": "Application to be Approved as Financial Holding Company Pursuant to Sections 280(2) and 280(3) of the Financial Services Act 2013 and Section 290(1) of the Islamic Financial Services Act 2013",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0029.pdf/51836de2-7789-8ba1-bd0e-55f3a4e3d421?t=1592340253416"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "385ed953e98495db70fcbe11d2d9ae1131cdf5d7aebcb86bab46cb0015c88bd0",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-51b99fd633a0",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0029.pdf/51836de2-7789-8ba1-bd0e-55f3a4e3d421?t=1592340253416",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-28",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Application to be Approved as Financial Holding Company Pursuant to Sections 280(2) and 280(3) of the Financial Services Act 2013 and Section 290(1) of the Islamic Financial Services Act 2013",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20130628_IAT_PL_0029.pdf/51836de2-7789-8ba1-bd0e-55f3a4e3d421?t=1592340253416",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "38_Prudential_Standards_on_Securitisation_Transactions_24062013.pdf",
+    "label": "Prudential Standards on Securitisation Transactions for Islamic Banks",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/38_Prudential_Standards_on_Securitisation_Transactions_24062013.pdf/e764958d-12ab-00c1-597a-0c1d74f5f35a?t=1601180424672"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "62baaf062efc2b108dd87b0545ce6d88a86641df3b4acaadfb65e0e86cbaa049",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-295bb2d65b41",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/38_Prudential_Standards_on_Securitisation_Transactions_24062013.pdf/e764958d-12ab-00c1-597a-0c1d74f5f35a?t=1601180424672",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-06-27",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Prudential Standards on Securitisation Transactions for Islamic Banks",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/38_Prudential_Standards_on_Securitisation_Transactions_24062013.pdf/e764958d-12ab-00c1-597a-0c1d74f5f35a?t=1601180424672",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130331_B_CA_0009.pdf",
+    "label": "Risk-Weighted Capital Adequacy Framework (Basel II) - Internal Capital Adequacy Assessment Process (Pillar 2)",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/20130331_B_CA_0009.pdf/81f148b3-25f3-cf06-1a79-eb8efef1b244?t=1592212480283"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "e97723537238fd37b84a5e3385fede2c6bd1c8c56f6ef85439c6294f387f8dfd",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-fe45adf95c6e",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/20130331_B_CA_0009.pdf/81f148b3-25f3-cf06-1a79-eb8efef1b244?t=1592212480283",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-03-31",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Risk-Weighted Capital Adequacy Framework (Basel II) - Internal Capital Adequacy Assessment Process (Pillar 2)",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/20130331_B_CA_0009.pdf/81f148b3-25f3-cf06-1a79-eb8efef1b244?t=1592212480283",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "gl_013_5.pdf",
+    "label": "Risk Governance",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/gl_013_5.pdf/d00c604b-412b-6a32-990e-f6368249a598?t=1592212357829"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "cdd1fce45660a8cda9ea1aff5212feb9864b0a658000cb24e145e318f078f1f1",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d1eabda938d4",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/gl_013_5.pdf/d00c604b-412b-6a32-990e-f6368249a598?t=1592212357829",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-03-01",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Risk Governance",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/gl_013_5.pdf/d00c604b-412b-6a32-990e-f6368249a598?t=1592212357829",
+  "year": 2013
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20130103_IAT_PL_0023.pdf",
+    "label": "Risk Governance",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/20130103_IAT_PL_0023.pdf/d6e976fc-bc9a-b0d2-c219-cce558972ed4?t=1592340099915"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "a21103dc747763c071e9138478e478d45830960af16deb2211ce4da221040d55",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-6a821b8d6d99",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/20130103_IAT_PL_0023.pdf/d6e976fc-bc9a-b0d2-c219-cce558972ed4?t=1592340099915",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2013-01-03",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Risk Governance",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/20130103_IAT_PL_0023.pdf/d6e976fc-bc9a-b0d2-c219-cce558972ed4?t=1592340099915",
+  "year": 2013
+ }
+]

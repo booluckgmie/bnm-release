@@ -16,6 +16,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
 DATA = Path(__file__).resolve().parent.parent / "data"
+CATEGORIES = ("notice", "mps", "policy", "fmc", "fep", "speech", "press")
+SUBDIRS = ("notices", "mps", "policy", "fmc", "fep", "speeches", "press")
 CACHE = "public, s-maxage=900, stale-while-revalidate=3600"
 
 app = FastAPI(
@@ -72,7 +74,7 @@ def by_id() -> dict[str, dict]:
 @lru_cache(maxsize=32)
 def year_file(year: int) -> dict[str, dict]:
     out: dict[str, dict] = {}
-    for sub in ("notices", "mps"):
+    for sub in SUBDIRS:
         p = DATA / sub / f"{year}.json"
         if p.exists():
             out.update({r["id"]: r for r in json.loads(p.read_text(encoding="utf-8"))})
@@ -103,7 +105,7 @@ def root(response: Response):
         "name": "BNM Public Notices API (unofficial)",
         "data_updated_at": coverage().get("updated_at"),
         "notices": len(index()),
-        "by_category": {c: sum(r.get("category", "notice") == c for r in index()) for c in ("notice", "mps")},
+        "by_category": {c: sum(r.get("category", "notice") == c for r in index()) for c in CATEGORIES},
         "endpoints": ["/", "/notices", "/notices/{id}", "/years", "/changes", "/health", "/docs"],
     }
 
@@ -126,8 +128,12 @@ def list_notices(
     year: int | None = Query(None, ge=2009, le=2100),
     q: str | None = Query(None, min_length=2, description="case-insensitive substring match"),
     scope: Literal["title", "all"] = Query("title", description="'all' also searches the body text"),
-    category: Literal["notice", "mps"] | None = Query(
-        None, description="'notice' = Public Notices; 'mps' = Monetary Policy Statements (OPR decisions)"),
+    category: Literal["notice", "mps", "policy", "fmc", "fep", "speech", "press"] | None = Query(
+        None, description="notice = Public Notices, mps = Monetary Policy Statements (OPR), policy = policy "
+                          "documents / exposure drafts / discussion papers, fmc = Financial Markets Committee "
+                          "statements, fep = foreign exchange policy announcements, speech, press = press releases"),
+    policy_type: str | None = Query(
+        None, min_length=2, description="policy only: substring of the type, e.g. 'Exposure Draft', 'Discussion Paper'"),
     date_from: str | None = Query(None, pattern=r"^\d{4}-\d{2}-\d{2}$", description="YYYY-MM-DD"),
     date_to: str | None = Query(None, pattern=r"^\d{4}-\d{2}-\d{2}$", description="YYYY-MM-DD"),
     has_attachments: bool | None = None,
@@ -141,6 +147,8 @@ def list_notices(
         rows = [r for r in rows if r["year"] == year]
     if category:
         rows = [r for r in rows if r.get("category", "notice") == category]
+    if policy_type:
+        rows = [r for r in rows if policy_type.lower() in (r.get("policy_type") or "").lower()]
     if date_from:
         rows = [r for r in rows if r["published_date"] >= date_from]
     if date_to:
