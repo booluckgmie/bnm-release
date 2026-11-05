@@ -1,0 +1,360 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "nt_life+framework_Nov2015.pdf",
+    "label": "Life insurance and Family Takaful Framework",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/nt_life+framework_Nov2015.pdf/762468dc-8194-f0e9-c0c9-4bbeeec2311d?t=1592341988025"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "e8a285ca39fd62df59368065325ba6617157194cf2043d8a06b4f9eea9d25fd7",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-8df37535e3d3",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/nt_life+framework_Nov2015.pdf/762468dc-8194-f0e9-c0c9-4bbeeec2311d?t=1592341988025",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-11-23",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Life insurance and Family Takaful Framework",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/nt_life+framework_Nov2015.pdf/762468dc-8194-f0e9-c0c9-4bbeeec2311d?t=1592341988025",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PUA211-2015.pdf",
+    "label": "Financial Services (Financial Ombudsman Scheme) Regulations 2015",
+    "url": "https://www.bnm.gov.my/documents/20124/820862/PUA211-2015.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "94ef99fd8c58bb9b7cfcd63d21674c931ff39722924566145e9ef8c8ab62cc9f",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-69f907e755a6",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/820862/PUA211-2015.pdf",
+  "listed": true,
+  "policy_type": "Regulation",
+  "published_date": "2015-09-11",
+  "sectors": [
+   "banking",
+   "insurance-takaful",
+   "payment-systems"
+  ],
+  "title": "Financial Services (Financial Ombudsman Scheme) Regulations 2015",
+  "url": "https://www.bnm.gov.my/documents/20124/820862/PUA211-2015.pdf",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PUA210-2015.pdf",
+    "label": "Islamic Financial Services (Financial Ombudsman Scheme) Regulations 2015",
+    "url": "https://www.bnm.gov.my/documents/20124/820862/PUA210-2015.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "57a232db3c5c61dae4924710a1943268f929af751790ac06c17f7b181b50c454",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-42f44bde92b0",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/820862/PUA210-2015.pdf",
+  "listed": true,
+  "policy_type": "Regulation",
+  "published_date": "2015-09-11",
+  "sectors": [
+   "banking",
+   "insurance-takaful",
+   "payment-systems"
+  ],
+  "title": "Islamic Financial Services (Financial Ombudsman Scheme) Regulations 2015",
+  "url": "https://www.bnm.gov.my/documents/20124/820862/PUA210-2015.pdf",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "BMC_Letter.pdf",
+    "label": "Regulatory Treatment of BNM Mudarabah Certificate (BMC) for Licensed Banks and Licensed Islamic Banks",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/BMC_Letter.pdf/6675d52a-bb9c-97f2-5b07-8c1c9f88d0b8?t=1592218411899"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "abb2753ec409cd8ded2bf510e2ec45e7bbf37bd679e3fb39a7abd1a027d6ca8b",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-b330316a4f8e",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/BMC_Letter.pdf/6675d52a-bb9c-97f2-5b07-8c1c9f88d0b8?t=1592218411899",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-07-29",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Regulatory Treatment of BNM Mudarabah Certificate (BMC) for Licensed Banks and Licensed Islamic Banks",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/BMC_Letter.pdf/6675d52a-bb9c-97f2-5b07-8c1c9f88d0b8?t=1592218411899",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "BMC_Letter_for_ITO.pdf",
+    "label": "Regulatory Treatment of BNM Mudarabah Certificate (BMC) for Licensed Insurers and Licensed Takaful Operators",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/BMC_Letter_for_ITO.pdf/7396fdb7-de29-1a47-a415-2420dc09cee0?t=1592341806229"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f514046ced32e4f13cd809c9f4e40749886053495f678d79ffe2cb58cae44b65",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-645dac1272be",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/BMC_Letter_for_ITO.pdf/7396fdb7-de29-1a47-a415-2420dc09cee0?t=1592341806229",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-07-29",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Regulatory Treatment of BNM Mudarabah Certificate (BMC) for Licensed Insurers and Licensed Takaful Operators",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/BMC_Letter_for_ITO.pdf/7396fdb7-de29-1a47-a415-2420dc09cee0?t=1592341806229",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Introduction+of+New+Products+by+Insurers+and+Takaful+Operators.pdf",
+    "label": "Introduction of New Products by Insurers and Takaful Operators",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Introduction+of+New+Products+by+Insurers+and+Takaful+Operators.pdf/2f230fd8-97b9-905d-8d86-b2738f7ce470?t=1592341701364"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Introduction+of+New+Products+by+Insurers+and+Takaful+Operators+Response.pdf",
+    "label": "Attachment",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Introduction+of+New+Products+by+Insurers+and+Takaful+Operators+Response.pdf/d8c8b223-4233-f7d0-8c5b-1fedce731a2a?t=1592341716851"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "82b965ced43c08d1dfd50df653c214fe11a02b34bf198b3e35c7796cd4d81549",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-edfefaac08f1",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/Introduction+of+New+Products+by+Insurers+and+Takaful+Operators.pdf/2f230fd8-97b9-905d-8d86-b2738f7ce470?t=1592341701364",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-05-15",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Introduction of New Products by Insurers and Takaful Operators",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/Introduction+of+New+Products+by+Insurers+and+Takaful+Operators.pdf/2f230fd8-97b9-905d-8d86-b2738f7ce470?t=1592341701364",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Requirements_for_the_Conduct_of_MSB_by_BIs_v2.pdf",
+    "label": "Requirements for the Conduct of Money Services Business by Banking Institutions",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Requirements_for_the_Conduct_of_MSB_by_BIs_v2.pdf/52219870-22eb-d8ee-7209-f893e484a2d6?t=1592218351679"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "cefbf8f512f6c92a67836a4d3cd163b73503a8c03f703149dc9cfb4a57fad244",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-08951ca0f1a7",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Requirements_for_the_Conduct_of_MSB_by_BIs_v2.pdf/52219870-22eb-d8ee-7209-f893e484a2d6?t=1592218351679",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-04-21",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Requirements for the Conduct of Money Services Business by Banking Institutions",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Requirements_for_the_Conduct_of_MSB_by_BIs_v2.pdf/52219870-22eb-d8ee-7209-f893e484a2d6?t=1592218351679",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Musyarakah.pdf",
+    "label": "Musyarakah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Musyarakah.pdf/e99baaa9-d7cd-a61f-8d0a-9c9f2521dd4d?t=1592218252160"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Feedback+Statement+for+Musyarakah.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Feedback+Statement+for+Musyarakah.pdf/e419a8f3-83ba-92cd-091e-1e5bbd840a11?t=1592218258894"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "5ea478fee7e842944d81240086b56a41a169ba9196df75d0f2dc06fab96e19fa",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-498f17b570b9",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Musyarakah.pdf/e99baaa9-d7cd-a61f-8d0a-9c9f2521dd4d?t=1592218252160",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-04-20",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Musyarakah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Musyarakah.pdf/e99baaa9-d7cd-a61f-8d0a-9c9f2521dd4d?t=1592218252160",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Mudarabah.pdf",
+    "label": "Mudarabah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Mudarabah.pdf/2ea1c2df-b084-1b3b-f640-d7993d1e38ea?t=1592218042807"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Feedback+Statement+for+Mudarabah.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Feedback+Statement+for+Mudarabah.pdf/506b4b37-502f-0551-8049-2844e317b061?t=1592218145581"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "32f2dfc2d1fa88c1d8f1e065acfe2c6f612345742b2781b4a29b0300a0f20bd3",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-0d50e521b05b",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Mudarabah.pdf/2ea1c2df-b084-1b3b-f640-d7993d1e38ea?t=1592218042807",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-04-20",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Mudarabah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Mudarabah.pdf/2ea1c2df-b084-1b3b-f640-d7993d1e38ea?t=1592218042807",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_prohibited_business_conduct_july2016.pdf",
+    "label": "Prohibited Business Conduct **NEW 2016/07/19",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited_business_conduct_july2016.pdf/b1ccde1b-61a9-ae35-2376-2507655b1427?t=1592217766903"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_prohibited_business_conduct_july2016.pdf",
+    "label": "Attachment 1 - Response to Feedback Received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/fs_prohibited_business_conduct_july2016.pdf/e37abf3a-0acf-de5e-01c4-b1069e40e372?t=1592188995148"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "d4257b1922554d7f33be8eff3be721583ded59ec504f7d9ff701553a65a01f13",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-da57b8c4579f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited_business_conduct_july2016.pdf/b1ccde1b-61a9-ae35-2376-2507655b1427?t=1592217766903",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-04-16",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Prohibited Business Conduct **NEW 2016/07/19",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited_business_conduct_july2016.pdf/b1ccde1b-61a9-ae35-2376-2507655b1427?t=1592217766903",
+  "year": 2015
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Appointment_Duties_RI_RTO.pdf",
+    "label": "Appointed Actuary: Appointment and Duties (for reinsurers and retakaful operators)",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Appointment_Duties_RI_RTO.pdf/d01d4e13-f8e8-e27e-42e8-801b9eb3476e?t=1592341518423"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "735c6d13862afa5665250d5f2d91f9b3709eb3edaa77184fe9f5cfc0b40a5473",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-0ddfc6d4beb3",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/Appointment_Duties_RI_RTO.pdf/d01d4e13-f8e8-e27e-42e8-801b9eb3476e?t=1592341518423",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2015-04-14",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Appointed Actuary: Appointment and Duties (for reinsurers and retakaful operators)",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/Appointment_Duties_RI_RTO.pdf/d01d4e13-f8e8-e27e-42e8-801b9eb3476e?t=1592341518423",
+  "year": 2015
+ }
+]

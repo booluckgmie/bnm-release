@@ -1,13 +1,48 @@
 {
- "mps": {
-  "errors": 0,
-  "listed": 142,
-  "listing_error": null,
-  "ok": 142,
-  "stored": 142
+ "sources": {
+  "fep": {
+   "errors": 0,
+   "listed": 17,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 17,
+   "stored": 17
+  },
+  "fmc": {
+   "errors": 0,
+   "listed": 71,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 71,
+   "stored": 71
+  },
+  "policy": {
+   "errors": 0,
+   "listed": 212,
+   "listing_error": null,
+   "not_an_article": 212,
+   "ok": 0,
+   "stored": 212
+  },
+  "press": {
+   "errors": 0,
+   "listed": 1664,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 1664,
+   "stored": 1664
+  },
+  "speech": {
+   "errors": 0,
+   "listed": 619,
+   "listing_error": null,
+   "not_an_article": 0,
+   "ok": 619,
+   "stored": 619
+  }
  },
  "total_stored": 811,
- "updated_at": "2026-11-05T09:14:07+00:00",
+ "updated_at": "2026-11-05T10:28:11+00:00",
  "years": {
   "2009": {
    "errors": 0,

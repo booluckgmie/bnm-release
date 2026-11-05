@@ -1,0 +1,74 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "",
+    "filename": "8fc743c3-86dc-1019-8f36-1eb4ed55161e",
+    "label": "Information Note",
+    "url": "https://www.bnm.gov.my/documents/20124/60360/Info+Note+on+IRS+Pilot+Programme+Flexibility.pdf/8fc743c3-86dc-1019-8f36-1eb4ed55161e?t=1608520227925"
+   },
+   {
+    "ext": "",
+    "filename": "21269d7c-580a-8ec3-63f0-97911a3d2026",
+    "label": "List of Participating Licensed Onshore Banks",
+    "url": "https://www.bnm.gov.my/documents/20124/60360/List+of+Participating+Licensed+Onshore+Banks+%281%29.pdf/21269d7c-580a-8ec3-63f0-97911a3d2026?t=1609917129193"
+   }
+  ],
+  "body_hash": "6c747486d1605c68f42fdf371d803fb8d2a3d80204b610d085ed63934e4c58a8",
+  "body_text": "Operational Update on RM-denominated Interest Rate Swap for Non-Resident Financial Institutions\nEmbargo :\nFor immediate release\nNot for publication or broadcast before\n1230\non\nMonday, 2 November 2020\n2 Nov 2020\nBank Negara Malaysia would like to provide an operational update on RM-denominated Interest Rate Swap transactions for Non-Resident Financial Institutions aimed to provide better access for non-resident banks into the onshore financial markets.\nDetails can be found as follows:\nInformation Note\nList of Participating Licensed Onshore Banks\nBank Negara Malaysia\n2 November 2020\n© Bank Negara Malaysia, 2020. All rights reserved.",
+  "category": "fep",
+  "content_hash": "462b3bac6f90fa63012a180d99aa6f6c4a0f1af90066d25186d864be4df1672d",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:40:08+00:00",
+  "id": "operational-update-on-rm-denominated-interest-rate-swap-for-non-resident-financial-institutions",
+  "last_changed_at": "2026-11-05T09:40:08+00:00",
+  "last_checked_at": "2026-11-05T09:40:17+00:00",
+  "link_url": "https://www.bnm.gov.my/-/operational-update-on-rm-denominated-interest-rate-swap-for-non-resident-financial-institutions",
+  "listed": true,
+  "published_date": "2020-11-02",
+  "release_date": null,
+  "title": "Operational Update on RM-denominated Interest Rate Swap for Non-Resident Financial Institutions",
+  "url": "https://www.bnm.gov.my/-/operational-update-on-rm-denominated-interest-rate-swap-for-non-resident-financial-institutions",
+  "year": 2020
+ },
+ {
+  "attachments": [
+   {
+    "ext": "",
+    "filename": "810dc872-f686-e83e-eb15-e0fbe81180e3",
+    "label": "Summary note",
+    "url": "https://www.bnm.gov.my/documents/20124/0/FEP+Refinement_Summary+Note.pdf/810dc872-f686-e83e-eb15-e0fbe81180e3?t=1608520464175"
+   },
+   {
+    "ext": "",
+    "filename": "6206ab78-b37c-4fdd-de62-2c8dc336d41d",
+    "label": "Infographics",
+    "url": "https://www.bnm.gov.my/documents/20124/60360/FEP+Refinement_Infographics+%281%29.pdf/6206ab78-b37c-4fdd-de62-2c8dc336d41d?t=1608520585202"
+   },
+   {
+    "ext": "",
+    "filename": "3804cce1-a2ad-dd72-3416-ec1f77ca8f3e",
+    "label": "Frequently Asked Questions",
+    "url": "https://www.bnm.gov.my/documents/20124/53170/FEP+Refinement_FAQs.pdf/3804cce1-a2ad-dd72-3416-ec1f77ca8f3e?t=1608520628147"
+   }
+  ],
+  "body_hash": "b9759c841a6e945e42843b820a382c167e117d7fa409126d446e96c078f2cf1d",
+  "body_text": "Refinements in FE policies to improve business efficiency and enhance FX risk management\nEmbargo :\nFor immediate release\nNot for publication or broadcast before\n0030\non\nThursday, 30 April 2020\n30 Apr 2020\nLatest refinement in FE policies aimed to provide greater flexibility for corporates to improve business efficiency and enhance FX risk management:\nSummary note\n[PDF]\nInfographics\n[PDF]\nFrequently Asked Questions\n[PDF]\nBank Negara Malaysia\n30 April 2020\n© Bank Negara Malaysia, 2020. All rights reserved.",
+  "category": "fep",
+  "content_hash": "4062e5631dcb02c155360e4203034b64869f27047a79b8db2d0ce4b6837eec44",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:40:08+00:00",
+  "id": "refinements-in-fe-policies-to-improve-business-efficiency-and-enhance-fx-risk-management",
+  "last_changed_at": "2026-11-05T09:40:08+00:00",
+  "last_checked_at": "2026-11-05T09:40:19+00:00",
+  "link_url": "https://www.bnm.gov.my/-/refinements-in-fe-policies-to-improve-business-efficiency-and-enhance-fx-risk-management",
+  "listed": true,
+  "published_date": "2020-04-30",
+  "release_date": null,
+  "title": "Refinements in FE policies to improve business efficiency and enhance FX risk management",
+  "url": "https://www.bnm.gov.my/-/refinements-in-fe-policies-to-improve-business-efficiency-and-enhance-fx-risk-management",
+  "year": 2020
+ }
+]

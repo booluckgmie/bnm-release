@@ -1,0 +1,636 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_phased+liberalisation+of+motor+and+fire+tariffs_Jun2016.pdf",
+    "label": "Phased Liberalisation of Motor and Fire Tariffs",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/pd_phased+liberalisation+of+motor+and+fire+tariffs_Jun2016.pdf/6e20f6ce-ccb4-fcde-d4da-4f927512c070?t=1594080048705"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "1ab31de61a8d9274f8e0d9f1647786855a6d36dbc571d2d557f610c8a4b4d5aa",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-713a4e837038",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/pd_phased+liberalisation+of+motor+and+fire+tariffs_Jun2016.pdf/6e20f6ce-ccb4-fcde-d4da-4f927512c070?t=1594080048705",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-11-22",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Phased Liberalisation of Motor and Fire Tariffs",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/pd_phased+liberalisation+of+motor+and+fire+tariffs_Jun2016.pdf/6e20f6ce-ccb4-fcde-d4da-4f927512c070?t=1594080048705",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_prohibited+business+conduct_July2016.pdf",
+    "label": "Prohibited Business Conduct",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited+business+conduct_July2016.pdf/60064225-eb90-d2ce-ae50-b7c11b3aa1ab?t=1592246399853"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_prohibited+business+conduct_July2016.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/fs_prohibited+business+conduct_July2016.pdf/48b14a60-68dc-8fe3-7635-5888ee39baee?t=1592246404850"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "9fc1e96d1b7d12681a1c4d8683d42def2f08d783027a83afbef89f82a146fa4b",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-4dce9212ec8d",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited+business+conduct_July2016.pdf/60064225-eb90-d2ce-ae50-b7c11b3aa1ab?t=1592246399853",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-11-22",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Prohibited Business Conduct",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/pd_prohibited+business+conduct_July2016.pdf/60064225-eb90-d2ce-ae50-b7c11b3aa1ab?t=1592246399853",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD+on+Stress+Testing.pdf",
+    "label": "Stress Testing",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD+on+Stress+Testing.pdf/b0f60557-ac14-026b-1ade-220feda799cf?t=1594080358836"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Response+to+feedback.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Response+to+feedback.pdf/93e57f27-5c0a-db7c-a895-afb61ef61c4d?t=1594080411431"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "26e55932ad0ae641cc545b12cbc3589a7a815a86ed6d04ff355ab9676c0b9f42",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-3e61b615a875",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD+on+Stress+Testing.pdf/b0f60557-ac14-026b-1ade-220feda799cf?t=1594080358836",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-11-22",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Stress Testing",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD+on+Stress+Testing.pdf/b0f60557-ac14-026b-1ade-220feda799cf?t=1594080358836",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_ICAAP.pdf",
+    "label": "Internal Capital Adequacy Assessment Process for Takaful Operators",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/PD_ICAAP.pdf/e043abe6-6d85-1ea9-bdc5-d778f4329d4d?t=1580365197769"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Statement+of+Feedback_ICAAP.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/Statement+of+Feedback_ICAAP.pdf/aaa52755-7d82-e182-9797-39a99c0deb54?t=1580365196264"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f20071a98622c496f3923716e2bab2f980b99f35bcb7b8e8bf4fc9b0955f8e5f",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-291b9536da90",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/761691/PD_ICAAP.pdf/e043abe6-6d85-1ea9-bdc5-d778f4329d4d?t=1580365197769",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-11-22",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Internal Capital Adequacy Assessment Process for Takaful Operators",
+  "url": "https://www.bnm.gov.my/documents/20124/761691/PD_ICAAP.pdf/e043abe6-6d85-1ea9-bdc5-d778f4329d4d?t=1580365197769",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Liquidity_Coverage_Ratio_20160825.pdf",
+    "label": "Liquidity Coverage Ratio",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Liquidity_Coverage_Ratio_20160825.pdf/251e78e9-e8da-5b3e-36be-f77b214288fa?t=1592246139337"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Response+to+Feedback+Received+.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Response+to+Feedback+Received+.pdf/a546b6fd-34ec-519b-3e7a-5f0272915ad2?t=1592246204424"
+   },
+   {
+    "ext": "zip",
+    "filename": "LCR.zip",
+    "label": "Reporting templates",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/LCR.zip/f15415a4-19e7-4007-cf14-d3b57716e7b0?t=1592246299645"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "3d5227b716e4b6bfa2711ba5228b83a8e7840b9bf825165b7e74a5b8afe66ab9",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-10052081718c",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Liquidity_Coverage_Ratio_20160825.pdf/251e78e9-e8da-5b3e-36be-f77b214288fa?t=1592246139337",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-26",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Liquidity Coverage Ratio",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Liquidity_Coverage_Ratio_20160825.pdf/251e78e9-e8da-5b3e-36be-f77b214288fa?t=1592246139337",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD+Ijarah+28062018_Final.pdf",
+    "label": "Ijarah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD+Ijarah+28062018_Final.pdf/479fc345-c628-8996-25f0-8d1fe06aa700?t=1592245815724"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "657f071f55739acc5d547907fe918d845987dbec8d7bf621a80b851c68913878",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-24315c3284eb",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD+Ijarah+28062018_Final.pdf/479fc345-c628-8996-25f0-8d1fe06aa700?t=1592245815724",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-19",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Ijarah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD+Ijarah+28062018_Final.pdf/479fc345-c628-8996-25f0-8d1fe06aa700?t=1592245815724",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_Shareholder+suitability_Aug2016.pdf",
+    "label": "Shareholder Suitability",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/pd_Shareholder+suitability_Aug2016.pdf/16ced631-8017-d4ab-8a75-8b3727fcb1c9?t=1580443142872"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_ShareholderSuitability_Aug2016.pdf",
+    "label": "Response to Feedback Received",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/fs_ShareholderSuitability_Aug2016.pdf/43975361-b64a-9908-fad7-ece405ae013f?t=1580443142251"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "28f76a5a97044516ebb502d00c6150ae66eb1585723f8bbee62734848611e6dd",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-606c5ded6e6c",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/761691/pd_Shareholder+suitability_Aug2016.pdf/16ced631-8017-d4ab-8a75-8b3727fcb1c9?t=1580443142872",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-18",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Shareholder Suitability",
+  "url": "https://www.bnm.gov.my/documents/20124/761691/pd_Shareholder+suitability_Aug2016.pdf/16ced631-8017-d4ab-8a75-8b3727fcb1c9?t=1580443142872",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Wadiah_PD.pdf",
+    "label": "Wadiah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Wadiah_PD.pdf/af4d3c8b-8dc5-b54e-b295-0e43836187aa?t=1592245542456"
+   },
+   {
+    "ext": "pdf",
+    "filename": "wadiah_feedback.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/wadiah_feedback.pdf/de82d411-8f7a-270b-ebc5-0edb5b3aa048?t=1592245606386"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "d34f0e2916c00e92d0b978277fc5aa668b2fbef8b1e5adf26d89318629f39df0",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d0306329d4a8",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Wadiah_PD.pdf/af4d3c8b-8dc5-b54e-b295-0e43836187aa?t=1592245542456",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-04",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Wadiah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Wadiah_PD.pdf/af4d3c8b-8dc5-b54e-b295-0e43836187aa?t=1592245542456",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD+Qard_26022018.pdf",
+    "label": "Qard",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD+Qard_26022018.pdf/795395cd-aeee-d497-109d-e3af19874a44?t=1592245448584"
+   },
+   {
+    "ext": "pdf",
+    "filename": "qard_faq.pdf",
+    "label": "FAQ",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/qard_faq.pdf/6ad65607-489b-de1c-c917-ae7890070a4d?t=1592245214867"
+   },
+   {
+    "ext": "pdf",
+    "filename": "qard_feedback.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/qard_feedback.pdf/750035b0-4d33-962f-b5cd-0c2b83e0627f?t=1592245341938"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "66cd33b36ba3d634e55abba8b45126e5e62e522e318ca89471cfcbde417dbdb6",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-891320659cac",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD+Qard_26022018.pdf/795395cd-aeee-d497-109d-e3af19874a44?t=1592245448584",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-04",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Qard",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD+Qard_26022018.pdf/795395cd-aeee-d497-109d-e3af19874a44?t=1592245448584",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Hibah.pdf",
+    "label": "Hibah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Hibah.pdf/8d6ac6f9-9bb5-5780-005b-65a639c36f44?t=1592245213682"
+   },
+   {
+    "ext": "pdf",
+    "filename": "hibah_feedback.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/hibah_feedback.pdf/d8112c66-030c-8839-2a25-10c13cbe049c?t=1592245280364"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4e51c89596fd487a92c8b4a5638fc1c65d0a471acae5ace0c18fde2e19173923",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-0f37241c0277",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD_Hibah.pdf/8d6ac6f9-9bb5-5780-005b-65a639c36f44?t=1592245213682",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-04",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Hibah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Hibah.pdf/8d6ac6f9-9bb5-5780-005b-65a639c36f44?t=1592245213682",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_CorporateGovernance_Aug2016.pdf",
+    "label": "Corporate Governance",
+    "url": "https://www.bnm.gov.my/documents/20124/65319/pd_CorporateGovernance_Aug2016.pdf/b587630a-a1af-3607-c7f5-03086826c021?t=1586927811343"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_corporategovernance_Aug2016.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/fs_corporategovernance_Aug2016.pdf/4c0651ff-e021-865e-26dc-b30afd4b081f?t=1592245113913"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "8a380e2881191024c03248c023c7833872fced90e50d107a6c0c7ec562a9656b",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-4c4a9fb67c3f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/65319/pd_CorporateGovernance_Aug2016.pdf/b587630a-a1af-3607-c7f5-03086826c021?t=1586927811343",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-08-03",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Corporate Governance",
+  "url": "https://www.bnm.gov.my/documents/20124/65319/pd_CorporateGovernance_Aug2016.pdf/b587630a-a1af-3607-c7f5-03086826c021?t=1586927811343",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "change_in_terminology.pdf",
+    "label": "Change in terminology \"Private Debt Securities\" to \"Corporate Bond and/or Sukuk",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/change_in_terminology.pdf/13032d97-47ac-cdfc-7f0b-bc265b2c1a4a?t=1580438999941"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "fa239b03634880ab0a0677ea3a505ac3959e0989f8669ea874dca410881f4fec",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-a5545f481843",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/761691/change_in_terminology.pdf/13032d97-47ac-cdfc-7f0b-bc265b2c1a4a?t=1580438999941",
+  "listed": true,
+  "policy_type": "Notification",
+  "published_date": "2016-07-22",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Change in terminology \"Private Debt Securities\" to \"Corporate Bond and/or Sukuk",
+  "url": "https://www.bnm.gov.my/documents/20124/761691/change_in_terminology.pdf/13032d97-47ac-cdfc-7f0b-bc265b2c1a4a?t=1580438999941",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_on_Stress_Testing.pdf",
+    "label": "Stress Testing",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD_on_Stress_Testing.pdf/1ff2ec97-7966-a8a6-6e37-413b65492c6c?t=1592357950255"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Stress_Testing_Response_to_feedback.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Stress_Testing_Response_to_feedback.pdf/e8f121de-be32-addf-0b62-db8d46a86fb3?t=1592358049731"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "e154ff8b20eeca00c1ec9c4d6d347c5a650f0e52b01df642a4addc49f8bbc363",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-15d44e5335b4",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD_on_Stress_Testing.pdf/1ff2ec97-7966-a8a6-6e37-413b65492c6c?t=1592357950255",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-07-01",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Stress Testing",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD_on_Stress_Testing.pdf/1ff2ec97-7966-a8a6-6e37-413b65492c6c?t=1592357950255",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Wakalah.pdf",
+    "label": "Wakalah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Wakalah.pdf/fe87974d-190f-0e11-b0e3-9cb7ab96eb02?t=1592244614898"
+   },
+   {
+    "ext": "pdf",
+    "filename": "wakalah_feedback_statement.pdf",
+    "label": "Attachment 1: Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/wakalah_feedback_statement.pdf/4dc42a88-061a-e18a-9322-4d38dfa59394?t=1592244622989"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "5f29358f41f232b42e20ddb0ca7e47d160141e83a311e94845b1fd12d76d8dd6",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-6c2cc12011b3",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD_Wakalah.pdf/fe87974d-190f-0e11-b0e3-9cb7ab96eb02?t=1592244614898",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-06-27",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Wakalah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Wakalah.pdf/fe87974d-190f-0e11-b0e3-9cb7ab96eb02?t=1592244614898",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_operational+risk_may2016.pdf",
+    "label": "Operational Risk",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/pd_operational+risk_may2016.pdf/c1179a37-07f8-c6b0-6354-bc7216e903a0?t=1580434747718"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_operational+risk_may2016.pdf",
+    "label": "Response to feedback received",
+    "url": "https://www.bnm.gov.my/documents/20124/761691/fs_operational+risk_may2016.pdf/9f94ea76-99a2-58db-8e8b-7d47b7a3b794?t=1580434747049"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "df34627fe4a6d7b39521e786a20b66cee57bb8df54979c6eb613e72c80bf0eee",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-afd8ab3bb893",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/761691/pd_operational+risk_may2016.pdf/c1179a37-07f8-c6b0-6354-bc7216e903a0?t=1580434747718",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-05-11",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Operational Risk",
+  "url": "https://www.bnm.gov.my/documents/20124/761691/pd_operational+risk_may2016.pdf/c1179a37-07f8-c6b0-6354-bc7216e903a0?t=1580434747718",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd_compliance_Oct2015+%28Reissuance_May2016%29.pdf",
+    "label": "Compliance",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/pd_compliance_Oct2015+%28Reissuance_May2016%29.pdf/6da52ca8-734a-d2fb-e214-093430ea8fb6?t=1592219195301"
+   },
+   {
+    "ext": "pdf",
+    "filename": "fs_compliance_Oct2015.pdf",
+    "label": "Response to feedback received - Compliance",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/fs_compliance_Oct2015.pdf/0190eb79-1e67-53b7-3afa-283071eb83f6?t=1592219234812"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "d865414e5813d8af61d41b10dca4ab2500a2083b87deabd9672f7bd111fbc833",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-1a30c42d9d4f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/pd_compliance_Oct2015+%28Reissuance_May2016%29.pdf/6da52ca8-734a-d2fb-e214-093430ea8fb6?t=1592219195301",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-05-10",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Compliance",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/pd_compliance_Oct2015+%28Reissuance_May2016%29.pdf/6da52ca8-734a-d2fb-e214-093430ea8fb6?t=1592219195301",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Manual_Rujukan_IKI_kpd_MPS.pdf",
+    "label": "Manual Rujukan Institusi Kewangan Islam Kepada Majlis Penasihat Shariah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Manual_Rujukan_IKI_kpd_MPS.pdf/d58a8c36-a439-b036-1b9e-0ffe980bb482?t=1592244270923"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "8e044b31587e876f0816c09d14539586c483429a20be4b47eb69b30fb801ac17",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-fe5c73fe144d",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Manual_Rujukan_IKI_kpd_MPS.pdf/d58a8c36-a439-b036-1b9e-0ffe980bb482?t=1592244270923",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-03-15",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Manual Rujukan Institusi Kewangan Islam Kepada Majlis Penasihat Shariah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Manual_Rujukan_IKI_kpd_MPS.pdf/d58a8c36-a439-b036-1b9e-0ffe980bb482?t=1592244270923",
+  "year": 2016
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Istisna_PD_29122015.pdf",
+    "label": "Istisna'",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/Istisna_PD_29122015.pdf/b2da7948-cb8a-40ad-f669-3d55b4e8b26b?t=1592244257525"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f900ebdb4deeddd366342d50a4a57b1cb5a1414116606a790d439a78f1217fe0",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-09d68fed2f72",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/Istisna_PD_29122015.pdf/b2da7948-cb8a-40ad-f669-3d55b4e8b26b?t=1592244257525",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2016-01-07",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Istisna'",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/Istisna_PD_29122015.pdf/b2da7948-cb8a-40ad-f669-3d55b4e8b26b?t=1592244257525",
+  "year": 2016
+ }
+]

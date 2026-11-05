@@ -1,0 +1,543 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD-PSO-22122022.pdf",
+    "label": "Payment System Operator",
+    "url": "https://www.bnm.gov.my/documents/20124/943361/PD-PSO-22122022.pdf"
+   },
+   {
+    "ext": "pdf",
+    "filename": "FS-PSO-22122022.pdf",
+    "label": "Feedback Statement",
+    "url": "https://www.bnm.gov.my/documents/20124/943361/FS-PSO-22122022.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "413cd40e8be14e175555966f07efc557abe6bbfa5e5e6b97ce74ce140e7e9a7b",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-101695a8c01f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/943361/PD-PSO-22122022.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-12-22",
+  "sectors": [
+   "payment-systems"
+  ],
+  "title": "Payment System Operator",
+  "url": "https://www.bnm.gov.my/documents/20124/943361/PD-PSO-22122022.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD-BCM.pdf",
+    "label": "Business Continuity Management",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD-BCM.pdf"
+   },
+   {
+    "ext": "xlsx",
+    "filename": "LoD_Form_2025.xlsx",
+    "label": "Attachment 1: Level of Disruption (LoD) Reporting Template",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/LoD_Form_2025.xlsx"
+   },
+   {
+    "ext": "xlsx",
+    "filename": "CISS_Form_2025.xlsx",
+    "label": "Attachment 2: Cyber Incident Scoring System (CISS) Form",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/CISS_Form_2025.xlsx"
+   },
+   {
+    "ext": "pdf",
+    "filename": "FS-BCM.pdf",
+    "label": "Feedback Statement",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/FS-BCM.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "92467cc4171343512b3fe7034cbca306563d51a6b6fee0a4f161b2359b29dbc3",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-4049a717b53e",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD-BCM.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-12-19",
+  "sectors": [
+   "banking",
+   "insurance-takaful",
+   "payment-systems"
+  ],
+  "title": "Business Continuity Management",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD-BCM.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "ED-Hajah-Darurah.pdf",
+    "label": "Hajah and Darurah",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/ED-Hajah-Darurah.pdf?s=1"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f49c3f3283b6f3f7ec2ab748d67ff32329947a19420b2b7c73271200567d8793",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-03f75a6cb555",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/ED-Hajah-Darurah.pdf?s=1",
+  "listed": true,
+  "policy_type": "Exposure Draft",
+  "published_date": "2022-12-15",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Hajah and Darurah",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/ED-Hajah-Darurah.pdf?s=1",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD-SBL-RENTAS-dec2022.pdf",
+    "label": "Securities Borrowing and Lending of RENTAS Securities",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD-SBL-RENTAS-dec2022.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "5c0c6001c9f07ece8afd16e21428de4bb0c13bfd54b8e68e14141164d54453c5",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-3d218a8bbb50",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD-SBL-RENTAS-dec2022.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-12-02",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Securities Borrowing and Lending of RENTAS Securities",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD-SBL-RENTAS-dec2022.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "ED_DITO_Licensing_and_Regulatory_Framework.pdf",
+    "label": "Licensing Framework for Digital Insurers and Takaful Operators (DITOs)",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/ED_DITO_Licensing_and_Regulatory_Framework.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "45261b860bd4e2a2c92ccd6cb66ab246f9e625013bece8b0770e979c5d662bf1",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-edb51863011f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/ED_DITO_Licensing_and_Regulatory_Framework.pdf",
+  "listed": true,
+  "policy_type": "Exposure Draft",
+  "published_date": "2022-11-25",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Licensing Framework for Digital Insurers and Takaful Operators (DITOs)",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/ED_DITO_Licensing_and_Regulatory_Framework.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Financial_Condition_Report_Nov22.pdf",
+    "label": "Financial Condition Report",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Condition_Report_Nov22.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "ae35bf4d6d4c376ecf18253b92ef0f5c3f462bddf71a0d8cb1f09427534fc9eb",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-5a5b03f78158",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Condition_Report_Nov22.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-11-16",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Financial Condition Report",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Condition_Report_Nov22.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Payment_Cards_Framework.pdf",
+    "label": "Payments Cards Framework",
+    "url": "https://www.bnm.gov.my/documents/20124/943361/PD_Payment_Cards_Framework.pdf"
+   },
+   {
+    "ext": "pdf",
+    "filename": "20250728-PCF-PD-Adjustment-Debit-Card-Interchange-Fee-Ceiling.pdf",
+    "label": "Adjustment to the Debit Card Interchange Fee Ceiling for Mobile Wallet Transactions",
+    "url": "https://www.bnm.gov.my/documents/20124/943361/20250728-PCF-PD-Adjustment-Debit-Card-Interchange-Fee-Ceiling.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "6f8da36637d6ddce91952064ed37e57a3a2271c0b6cf196eefe1e66875f713fe",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-ffadbd122df0",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/943361/PD_Payment_Cards_Framework.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-08-19",
+  "sectors": [
+   "banking",
+   "payment-systems"
+  ],
+  "title": "Payments Cards Framework",
+  "url": "https://www.bnm.gov.my/documents/20124/943361/PD_Payment_Cards_Framework.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Banca.pdf",
+    "label": "Bancassurance/Bancatakaful",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Banca.pdf"
+   },
+   {
+    "ext": "pdf",
+    "filename": "Banca_fdbk_stmt.pdf",
+    "label": "Public Feedback Statement",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Banca_fdbk_stmt.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "1b32ca6388b6fc0992ab37e35bb74e559fb61437f651b53324b741e62cc46e62",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-ecfd081f5270",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD_Banca.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-06-30",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Bancassurance/Bancatakaful",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Banca.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "DP_2024_CRST.pdf",
+    "label": "2024 Climate Risk Stress Testing (CRST) Exercise",
+    "url": "https://www.bnm.gov.my/documents/20124/3770663/DP_2024_CRST.pdf"
+   },
+   {
+    "ext": "xlsx",
+    "filename": "Attachment_1_fdbk_DP_2024_CRST.xlsx",
+    "label": "Attachment 1: Feedback Template for the Discussion Paper",
+    "url": "https://www.bnm.gov.my/documents/20124/3770663/Attachment_1_fdbk_DP_2024_CRST.xlsx?s=1"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f37ca8b7234cc0da7d691516bfcd09e725d94e51ca2f2e9cf0f9538448b6e77a",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-d0bb070aad39",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/3770663/DP_2024_CRST.pdf",
+  "listed": true,
+  "policy_type": "Discussion Paper",
+  "published_date": "2022-06-30",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "2024 Climate Risk Stress Testing (CRST) Exercise",
+  "url": "https://www.bnm.gov.my/documents/20124/3770663/DP_2024_CRST.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Granting_of_Credit_Facilities.pdf",
+    "label": "Granting of Credit Facilities",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Granting_of_Credit_Facilities.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "1a8cfbc868b4273cd1557eaa5a2dc36fa674400ed0d8e763b9d5c340e9837c15",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-8ed3857c0c32",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD_Granting_of_Credit_Facilities.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-05-20",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Granting of Credit Facilities",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Granting_of_Credit_Facilities.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Financial_Reporting.pdf",
+    "label": "Financial Reporting",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "384b5e3bd725425f3f8d6983ce6db22d80de2dfb60617759b01de8e8a0b852d2",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-fbcc20f8cb6f",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-04-29",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Financial Reporting",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Financial_Reporting_Takaful.pdf",
+    "label": "Financial Reporting for Takaful Operators",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Reporting_Takaful.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "ebc928c8b118dab847be9b4063113dadfb535f5b7b89daaaeb7356e2535ae128",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-9257521c3145",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Reporting_Takaful.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-04-29",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Financial Reporting for Takaful Operators",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/PD_Financial_Reporting_Takaful.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "PD_Financial_Reporting_Islamic_Banks.pdf",
+    "label": "Financial Reporting for Islamic Banking Institutions",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting_Islamic_Banks.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4d15c600245256b2e195086f5712aa51754b4f58fa884b732cdc4cc5646655b8",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-1b0a91229d61",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting_Islamic_Banks.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-04-29",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Financial Reporting for Islamic Banking Institutions",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Financial_Reporting_Islamic_Banks.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "pd-myor-i.pdf",
+    "label": "Malaysia Islamic Overnight Rate (MYOR-i)",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/pd-myor-i.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4d43bbc9909d199686400211856b53f6df5d9db5586aa8f03fff079b22b69065",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-79c203bd689c",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/pd-myor-i.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2022-03-25",
+  "sectors": [
+   "banking"
+  ],
+  "title": "Malaysia Islamic Overnight Rate (MYOR-i)",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/pd-myor-i.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "Discussion_Paper_on_Broader_Application_of_Taawun.pdf",
+    "label": "Discussion Paper on Broader Application of Ta`awun in Takaful",
+    "url": "https://www.bnm.gov.my/documents/20124/948107/Discussion_Paper_on_Broader_Application_of_Taawun.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "4a874de2d2e6102e695f0f547f83b62c470bec98b7f8f9527cbcbc27231aa06f",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-535d9241e85c",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/948107/Discussion_Paper_on_Broader_Application_of_Taawun.pdf",
+  "listed": true,
+  "policy_type": "Discussion Paper",
+  "published_date": "2022-03-11",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Discussion Paper on Broader Application of Ta`awun in Takaful",
+  "url": "https://www.bnm.gov.my/documents/20124/948107/Discussion_Paper_on_Broader_Application_of_Taawun.pdf",
+  "year": 2022
+ },
+ {
+  "attachments": [
+   {
+    "ext": "xlsx",
+    "filename": "Form-New-ITB-2020.xlsx",
+    "label": "Application Form for New of Insurance Broker and/or Takaful Broker Business",
+    "url": "https://www.bnm.gov.my/documents/20124/855632/Form-New-ITB-2020.xlsx"
+   },
+   {
+    "ext": "xlsx",
+    "filename": "Form-Renew-ITB-2020.xlsx",
+    "label": "Application Form for Renewal of Insurance Broker and/or Takaful Broker Business",
+    "url": "https://www.bnm.gov.my/documents/20124/855632/Form-Renew-ITB-2020.xlsx"
+   },
+   {
+    "ext": "pdf",
+    "filename": "ITB-FAQ-Mar2022.pdf",
+    "label": "Frequently Asked Questions",
+    "url": "https://www.bnm.gov.my/documents/20124/855632/ITB-FAQ-Mar2022.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "e16511beb5cccd357afbb675bb553cc23390801d7a2b5cb078986efd219b650a",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-05T09:38:35+00:00",
+  "id": "policy-a5491e57afa4",
+  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_checked_at": "2026-11-05T09:38:35+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/855632/Form-New-ITB-2020.xlsx",
+  "listed": true,
+  "policy_type": "Others",
+  "published_date": "2022-03-10",
+  "sectors": [
+   "insurance-takaful"
+  ],
+  "title": "Application Form for New of Insurance Broker and/or Takaful Broker Business",
+  "url": "https://www.bnm.gov.my/documents/20124/855632/Form-New-ITB-2020.xlsx",
+  "year": 2022
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20191002a.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20191002a.pdf"
+   }
+  ],
+  "body_hash": "2ae0854c1778bfb3c48f7af9befded9e0013a8d8b5054f9cca5348e6e4d01683",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 3/2019\nDiscussion Summary of FMC Meeting 3/2019\n1200\non\nWednesday, 2 October 2019\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2019. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "1a9b3047f03d1e2045f04f30dbf8e094114692a67ba152ebd6d1c0e610c93115",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-03-2019",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:19+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-03-2019",
+  "listed": true,
+  "published_date": "2019-10-02",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 3/2019",
+  "url": "https://www.bnm.gov.my/-/fmc-03-2019",
+  "year": 2019
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20190716.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20190716.pdf"
+   }
+  ],
+  "body_hash": "2f99bde664eb0ed6bba76a3e8e985614c5e64bb73990860703be2653112b4954",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 2/2019\nDiscussion Summary of FMC Meeting 2/2019\n1200\non\nTuesday, 16 July 2019\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2019. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "c841ef6f345bbf26d00f9abac638463ca7f2407076267845adf481e55865abab",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-02-2019",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:20+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-02-2019",
+  "listed": true,
+  "published_date": "2019-07-16",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 2/2019",
+  "url": "https://www.bnm.gov.my/-/fmc-02-2019",
+  "year": 2019
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
+    "filename": "20190424.pdf",
+    "label": "Discussion Summary",
+    "url": "https://www.bnm.gov.my/documents/20124/11285645/20190424.pdf"
+   }
+  ],
+  "body_hash": "f1e7c2f5f4b7e59b472bad9926ea67717c3b365d02f1cb525252414394082a12",
+  "body_text": "Print\nDiscussion Summary of FMC Meeting 1/2019\nDiscussion Summary of FMC Meeting 1/2019\n1200\non\nWednesday, 24 April 2019\nRead the\nDiscussion Summary\n© Bank Negara Malaysia, 2019. All rights reserved.",
+  "category": "fmc",
+  "content_hash": "6d70546bd597c0d55b82c42d67462a245b013d0d5f371f27444ca3990b4ec67c",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-05T09:38:37+00:00",
+  "id": "fmc-01-2019",
+  "last_changed_at": "2026-11-05T09:38:37+00:00",
+  "last_checked_at": "2026-11-05T09:39:21+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fmc-01-2019",
+  "listed": true,
+  "published_date": "2019-04-24",
+  "release_date": null,
+  "title": "Discussion Summary of FMC Meeting 1/2019",
+  "url": "https://www.bnm.gov.my/-/fmc-01-2019",
+  "year": 2019
+ }
+]
