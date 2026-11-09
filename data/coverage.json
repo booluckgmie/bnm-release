@@ -34,7 +34,7 @@
   },
   "press": {
    "errors": 0,
-   "listed": 1664,
+   "listed": 55,
    "listing_error": null,
    "not_an_article": 0,
    "ok": 1664,
@@ -42,7 +42,7 @@
   },
   "speech": {
    "errors": 0,
-   "listed": 619,
+   "listed": 35,
    "listing_error": null,
    "not_an_article": 0,
    "ok": 619,
@@ -50,7 +50,7 @@
   }
  },
  "total_stored": 812,
- "updated_at": "2026-11-09T00:41:05+00:00",
+ "updated_at": "2026-11-09T06:59:26+00:00",
  "years": {
   "2009": {
    "errors": 0,
