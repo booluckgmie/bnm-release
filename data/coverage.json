@@ -42,15 +42,15 @@
   },
   "speech": {
    "errors": 0,
-   "listed": 35,
+   "listed": 36,
    "listing_error": null,
    "not_an_article": 0,
-   "ok": 619,
-   "stored": 619
+   "ok": 620,
+   "stored": 620
   }
  },
  "total_stored": 812,
- "updated_at": "2026-11-09T06:59:26+00:00",
+ "updated_at": "2026-11-10T07:56:13+00:00",
  "years": {
   "2009": {
    "errors": 0,
