@@ -529,10 +529,15 @@ SOURCES = {
 
 
 def finalize_direct(rec: dict) -> None:
-    """Rows that link straight to documents have no article page: attachments come from the listing."""
-    rec.update(fetch_status="not_an_article", fetch_error=None, body_text="", last_checked_at=now_iso())
+    """Rows that link straight to documents have no article page: attachments come from the listing.
+    last_checked_at only moves when the content does; otherwise every run would rewrite every record
+    and commit (and redeploy) for nothing."""
+    before = rec.get("content_hash")
+    rec.update(fetch_status="not_an_article", fetch_error=None, body_text="")
     rec["body_hash"] = sha("")
     rec["content_hash"] = sha(rec["body_hash"] + "|" + "|".join(sorted(a["url"] for a in rec["attachments"])))
+    if before is None or before != rec["content_hash"]:
+        rec["last_checked_at"] = now_iso()
 
 
 def load_owners() -> dict[str, str]:
@@ -548,7 +553,7 @@ def load_owners() -> dict[str, str]:
 def process_source(client: Client, args, events: list[dict], name: str, owners: dict[str, str]) -> dict:
     """Same lifecycle as process_year (create / edit / removal) for one non-notice source."""
     stats = {"listed": 0, "stored": 0, "ok": 0, "errors": 0, "not_an_article": 0, "created": 0,
-             "updated": 0, "removed": 0, "listing_error": None}
+             "updated": 0, "removed": 0, "listing_error": None, "partial": False}
     ddir = DATA / DATA_DIRS[name]
     existing: dict[str, dict] = {}
     for f in sorted(ddir.glob("*.json")):
@@ -563,6 +568,8 @@ def process_source(client: Client, args, events: list[dict], name: str, owners: 
 
     listing = [i for i in listing if owners.get(i["id"], name) == name]   # skip docs another source already owns
     stats["listed"] = len(listing)
+    # per-year sources list only some years unless --full: that count says nothing about the whole source
+    stats["partial"] = covered is not None and not args.full
     ts = now_iso()
     recheck_cutoff = date.today() - timedelta(days=args.recheck_days)
     listed_ids = set()
@@ -678,8 +685,11 @@ def update_coverage(all_stats: list[dict], source_stats: dict[str, dict] | None 
     old = read_json(DATA / "coverage.json", {})
     cov = {"years": dict(old.get("years", {})), "sources": dict(old.get("sources", {}))}
     for name, st in (source_stats or {}).items():
-        cov["sources"][name] = {k: st[k] for k in
-            ("listed", "stored", "ok", "errors", "not_an_article", "listing_error")}
+        entry = {k: st[k] for k in ("listed", "stored", "ok", "errors", "not_an_article", "listing_error")}
+        prev = cov["sources"].get(name)
+        if st.get("partial") and prev and not st["listing_error"]:
+            entry["listed"] = prev["listed"]   # keep the last full-listing count
+        cov["sources"][name] = entry
     for s in all_stats:
         # state only - per-run counters (created/updated/removed) would change every run and spam commits
         cov["years"][str(s["year"])] = {k: s[k] for k in
