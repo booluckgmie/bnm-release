@@ -49,8 +49,8 @@
    "stored": 621
   }
  },
- "total_stored": 812,
- "updated_at": "2026-11-11T08:42:31+00:00",
+ "total_stored": 813,
+ "updated_at": "2026-11-13T16:38:37+00:00",
  "years": {
   "2009": {
    "errors": 0,
@@ -207,12 +207,12 @@
   },
   "2026": {
    "errors": 0,
-   "listed": 47,
+   "listed": 48,
    "listing_error": null,
    "not_an_article": 0,
    "not_found": 0,
-   "ok": 47,
-   "stored": 47
+   "ok": 48,
+   "stored": 48
   }
  }
 }
