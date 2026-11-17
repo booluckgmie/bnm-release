@@ -360,10 +360,10 @@
   "fetch_status": "not_an_article",
   "first_seen_at": "2026-11-05T09:38:35+00:00",
   "id": "policy-27f155ea717e",
-  "last_changed_at": "2026-11-05T09:38:35+00:00",
+  "last_changed_at": "2026-11-17T08:43:15+00:00",
   "last_checked_at": "2026-11-16T00:06:38+00:00",
   "link_url": "https://www.bnm.gov.my/documents/20124/938039/ED_Open_Finance_2025.pdf",
-  "listed": true,
+  "listed": false,
   "policy_type": "Exposure Draft",
   "published_date": "2025-11-18",
   "sectors": [

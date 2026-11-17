@@ -3,6 +3,43 @@
   "attachments": [
    {
     "ext": "pdf",
+    "filename": "pd-openfinance-nov26.pdf",
+    "label": "Policy Document on Open Finance",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/pd-openfinance-nov26.pdf"
+   },
+   {
+    "ext": "pdf",
+    "filename": "faq-openfinance-nov26.pdf",
+    "label": "Frequently Asked Questions on Open Finance Policy Document",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/faq-openfinance-nov26.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "56be627cc620fa5b0ea1a710a01e6997699601a5fa6adf0266837ed064be0105",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-17T08:43:15+00:00",
+  "id": "policy-c2f332c9250e",
+  "last_changed_at": "2026-11-17T08:43:15+00:00",
+  "last_checked_at": "2026-11-17T08:43:15+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/pd-openfinance-nov26.pdf",
+  "listed": true,
+  "policy_type": "Policy Document",
+  "published_date": "2026-11-17",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Policy Document on Open Finance",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/pd-openfinance-nov26.pdf",
+  "year": 2026
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
     "filename": "op-myr-stlmt-rentas_2_26.pdf",
     "label": "Operational Procedures for Malaysian Ringgit (MYR) Settlement in RENTAS (Real Time Electronic Transfer of Funds and Securities System",
     "url": "https://www.bnm.gov.my/documents/20124/943361/op-myr-stlmt-rentas_2_26.pdf/"
