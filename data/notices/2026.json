@@ -3,6 +3,32 @@
   "attachments": [
    {
     "ext": "pdf",
+    "filename": "fs-ai-fs.pdf",
+    "label": "AI in the Malaysian Financial Sector",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/fs-ai-fs.pdf"
+   }
+  ],
+  "body_hash": "0256bbe07dbec088408877930bc07bad987fa2faa18b4a7d3857a3a532422da4",
+  "body_text": "Feedback Statement: Artificial Intelligence (AI) in the Malaysian Financial Sector\nEmbargo :\nFor immediate release\nNot for publication or broadcast before\n1430\non\nThursday, 19 November 2026\n19 Nov 2026\nBank Negara Malaysia (BNM) has published the Feedback Statement on Artificial Intelligence (AI) in the Malaysian Financial Sector, following the issuance of the Discussion Paper on AI in the Malaysian Financial Sector on 5 August 2025 and extensive engagement with industry stakeholders.\nThe Feedback Statement is informed by feedback from 113 respondents, including financial institutions, payment service providers, insurers and takaful operators, technology providers, and other ecosystem participants.\nThe findings indicate that AI adoption is gaining momentum across the financial sector, particularly in areas such as operational efficiency, customer service, fraud management and risk assessment. Stakeholders broadly supported a responsible and proportionate approach to AI adoption, while highlighting the importance of governance, accountability, data management, talent development and continued industry collaboration.\nThe Feedback Statement outlines:\nFeedback on opportunities, risks and governance considerations associated with AI;\nBNM's approach to supporting responsible AI adoption and innovation;\nAreas for industry collaboration to strengthen capabilities and share best practices; and\nRecommended considerations for financial institutions as AI adoption continues to evolve.\nAs AI capabilities continue to advance, BNM will continue to engage closely with industry to support responsible innovation that strengthens consumer outcomes, trust, resilience and financial sector development.\nAlongside these efforts, BNM welcomes industry-led initiatives that translate emerging risks and practices into practical guidance. This includes the Asian Institute of Chartered Bankers forthcoming Al Model Risk Management Framework driven by its Chief Risk Officers’ Forum (CROs Forum) and endorsed by the Association of Banks in Malaysia (ABM) which will support institutions in strengthening their approach to managing Al model risks.\nTo learn more about BNM’s innovation agenda and related initiatives, visit\nbnm.gov.my/innovation\n.\nIssuing Department\nFinancial Development and Innovation\nDocument:\nFeedback Statement:\nAI in the Malaysian Financial Sector\nBank Negara Malaysia\n19 November 2026\n© Bank Negara Malaysia, 2026. All rights reserved.",
+  "content_hash": "d1ab0f8c125b83a8b364f5d9cb847af443dcbc5e9486f0b657d408bdb7e8716d",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-19T14:35:44+00:00",
+  "id": "fs-aifs26",
+  "last_changed_at": "2026-11-19T14:35:44+00:00",
+  "last_checked_at": "2026-11-19T14:35:44+00:00",
+  "link_url": "https://www.bnm.gov.my/-/fs-aifs26",
+  "listed": true,
+  "published_date": "2026-11-19",
+  "release_date": null,
+  "title": "Feedback Statement: Artificial Intelligence (AI) in the Malaysian Financial Sector",
+  "url": "https://www.bnm.gov.my/-/fs-aifs26",
+  "year": 2026
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
     "filename": "pd-openfinance-nov26.pdf",
     "label": "Policy Document on Open Finance",
     "url": "https://www.bnm.gov.my/documents/20124/938039/pd-openfinance-nov26.pdf"
