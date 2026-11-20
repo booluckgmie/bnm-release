@@ -3,6 +3,32 @@
   "attachments": [
    {
     "ext": "pdf",
+    "filename": "ed_Product+Risk_1126.pdf",
+    "label": "Exposure Draft on Product Governance and Risk Management",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/ed_Product+Risk_1126.pdf"
+   }
+  ],
+  "body_hash": "dfe5664a5f2db4e161bd564474354e0dd98ce92474b3997de252f1b97abb9335",
+  "body_text": "Exposure Draft on Product Governance and Risk Management\nEmbargo :\nFor immediate release\nNot for publication or broadcast before\n1210\non\nFriday, 20 November 2026\n20 Nov 2026\nThis Exposure Draft (ED) sets out Bank Negara Malaysia’s (BNM) expectations for financial institutions to establish robust product governance and sound risk management when offering products. This includes clear accountability of board and senior management and effective processes to identify, assess and manage risks throughout a product’s lifecycle.\nAs technological innovation, changing economic conditions and customer needs continue to reshape the financial landscape, financial institutions must be able to respond to emerging opportunities in a timely manner while ensuring that risks are effectively managed and customers are treated fairly throughout the product’s lifecycle.\nTo support this, BNM is proposing a more progressive and outcome-focused approach to the introduction of new products. The proposed approach places greater responsibility on financial institutions to identify, assess, manage and take ownership of product-related risks, while fostering responsible innovation and promoting sustainable growth.\nUnder the proposed approach, financial institutions remain responsible for ensuring that –\nproducts are properly assessed before they are offered;\nrisks are adequately identified, understood and managed;\neffective controls are in place;\nresponsibilities and accountabilities of relevant personnel in relation to the product are clearly defined; and\ncustomers are treated fairly.\nNotwithstanding this approach, certain products and activities will continue to require consultation with or approval from BNM where this is required under existing rules.\nBNM will continue to exercise regulatory and supervisory oversight of product-related risks and retains powers to intervene where warranted. This include taking supervisory or administrative enforcement actions, such as:\nsubjecting a financial institution or specific products to heightened regulatory scrutiny, including requiring prior review or approval;\ndirecting corrective actions, including changes to or the recall of a product;\ndirecting timely remediation measures, including restitution to affected consumers; and\npublishing details of corrective actions taken against a financial institution.\nBNM invites written feedback on the proposed regulatory requirements, including responses to the specific questions set out in the ED. Feedback should be constructive and supported by clear rationale and, where appropriate, relevant evidence, examples or illustrations to facilitate BNM’s assessment. Submissions should be made electronically to BNM through\nthis link\nby 28 February 2027.\nIssuance Date\n20 November 2026\nIssuing Department\nPrudential Financial Policy\nDocument\nExposure Draft on Product Governance and Risk Management\nBank Negara Malaysia\n20 November 2026\n© Bank Negara Malaysia, 2026. All rights reserved.",
+  "content_hash": "9c5a2c36b1d44fabea138e1920ce230696056fa01eff76e87b6deb92d21488e4",
+  "fetch_error": null,
+  "fetch_status": "ok",
+  "first_seen_at": "2026-11-20T12:23:47+00:00",
+  "id": "ed-prodrisk",
+  "last_changed_at": "2026-11-20T12:23:47+00:00",
+  "last_checked_at": "2026-11-20T12:23:47+00:00",
+  "link_url": "https://www.bnm.gov.my/-/ed-prodrisk",
+  "listed": true,
+  "published_date": "2026-11-20",
+  "release_date": null,
+  "title": "Exposure Draft on Product Governance and Risk Management",
+  "url": "https://www.bnm.gov.my/-/ed-prodrisk",
+  "year": 2026
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
     "filename": "fs-ai-fs.pdf",
     "label": "AI in the Malaysian Financial Sector",
     "url": "https://www.bnm.gov.my/documents/20124/938039/fs-ai-fs.pdf"
