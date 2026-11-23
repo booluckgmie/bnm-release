@@ -3,6 +3,37 @@
   "attachments": [
    {
     "ext": "pdf",
+    "filename": "ed_Product+Risk_1126.pdf",
+    "label": "Product Governance and Risk Management",
+    "url": "https://www.bnm.gov.my/documents/20124/938039/ed_Product+Risk_1126.pdf"
+   }
+  ],
+  "body_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_text": "",
+  "category": "policy",
+  "content_hash": "f6dbb145aa014d4bf1ebbf8e331bc72df60dcb36c72811607561f684f3aaff4b",
+  "fetch_error": null,
+  "fetch_status": "not_an_article",
+  "first_seen_at": "2026-11-23T13:25:25+00:00",
+  "id": "policy-865e5773281d",
+  "last_changed_at": "2026-11-23T13:25:25+00:00",
+  "last_checked_at": "2026-11-23T13:25:25+00:00",
+  "link_url": "https://www.bnm.gov.my/documents/20124/938039/ed_Product+Risk_1126.pdf",
+  "listed": true,
+  "policy_type": "Exposure Draft",
+  "published_date": "2026-11-23",
+  "sectors": [
+   "banking",
+   "insurance-takaful"
+  ],
+  "title": "Product Governance and Risk Management",
+  "url": "https://www.bnm.gov.my/documents/20124/938039/ed_Product+Risk_1126.pdf",
+  "year": 2026
+ },
+ {
+  "attachments": [
+   {
+    "ext": "pdf",
     "filename": "pd-openfinance-nov26.pdf",
     "label": "Policy Document on Open Finance",
     "url": "https://www.bnm.gov.my/documents/20124/938039/pd-openfinance-nov26.pdf"

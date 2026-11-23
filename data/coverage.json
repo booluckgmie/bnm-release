@@ -26,11 +26,11 @@
   },
   "policy": {
    "errors": 0,
-   "listed": 212,
+   "listed": 213,
    "listing_error": null,
-   "not_an_article": 213,
+   "not_an_article": 214,
    "ok": 0,
-   "stored": 213
+   "stored": 214
   },
   "press": {
    "errors": 0,
@@ -50,7 +50,7 @@
   }
  },
  "total_stored": 816,
- "updated_at": "2026-11-23T01:29:44+00:00",
+ "updated_at": "2026-11-23T13:25:31+00:00",
  "years": {
   "2009": {
    "errors": 0,
