@@ -2,33 +2,33 @@
  "sources": {
   "fep": {
    "errors": 0,
-   "listed": 17,
-   "listing_error": null,
+   "listed": 0,
+   "listing_error": "HTTP 404 https://www.bnm.gov.my/fep/announcements",
    "not_an_article": 0,
-   "ok": 17,
+   "ok": 0,
    "stored": 17
   },
   "fmc": {
    "errors": 0,
-   "listed": 71,
-   "listing_error": null,
+   "listed": 0,
+   "listing_error": "HTTP 404 https://www.bnm.gov.my/committees/fmc/statements",
    "not_an_article": 0,
-   "ok": 71,
+   "ok": 0,
    "stored": 71
   },
   "mps": {
    "errors": 0,
-   "listed": 142,
-   "listing_error": null,
+   "listed": 0,
+   "listing_error": "listing parsed to 0 rows (layout change?)",
    "not_an_article": 0,
-   "ok": 142,
+   "ok": 0,
    "stored": 142
   },
   "policy": {
    "errors": 0,
-   "listed": 213,
-   "listing_error": null,
-   "not_an_article": 214,
+   "listed": 0,
+   "listing_error": "HTTP 404 https://www.bnm.gov.my/standardsandguidelines",
+   "not_an_article": 0,
    "ok": 0,
    "stored": 214
   },
@@ -42,15 +42,15 @@
   },
   "speech": {
    "errors": 0,
-   "listed": 626,
-   "listing_error": null,
+   "listed": 0,
+   "listing_error": "2026: HTTP 404 .bnm.gov.my/speeches-interviews/-/tag/speeches2026",
    "not_an_article": 0,
-   "ok": 629,
+   "ok": 0,
    "stored": 629
   }
  },
  "total_stored": 816,
- "updated_at": "2026-11-25T14:44:35+00:00",
+ "updated_at": "2026-11-27T18:37:22+00:00",
  "years": {
   "2009": {
    "errors": 0,
@@ -207,11 +207,11 @@
   },
   "2026": {
    "errors": 0,
-   "listed": 51,
-   "listing_error": null,
+   "listed": 0,
+   "listing_error": "HTTP 404 (no page for this year yet)",
    "not_an_article": 0,
    "not_found": 0,
-   "ok": 51,
+   "ok": 0,
    "stored": 51
   }
  }
