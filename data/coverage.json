@@ -27,7 +27,7 @@
   "policy": {
    "errors": 0,
    "listed": 0,
-   "listing_error": "HTTP 404 https://www.bnm.gov.my/standardsandguidelines",
+   "listing_error": "HTTP 404 https://www.bnm.gov.my/insurance-takaful",
    "not_an_article": 0,
    "ok": 0,
    "stored": 214
@@ -43,14 +43,14 @@
   "speech": {
    "errors": 0,
    "listed": 0,
-   "listing_error": "2026: HTTP 404 .bnm.gov.my/speeches-interviews/-/tag/speeches2026",
+   "listing_error": null,
    "not_an_article": 0,
-   "ok": 0,
+   "ok": 629,
    "stored": 629
   }
  },
  "total_stored": 816,
- "updated_at": "2026-11-27T18:37:22+00:00",
+ "updated_at": "2026-11-28T09:40:28+00:00",
  "years": {
   "2009": {
    "errors": 0,
@@ -208,7 +208,7 @@
   "2026": {
    "errors": 0,
    "listed": 0,
-   "listing_error": "HTTP 404 (no page for this year yet)",
+   "listing_error": "listing parsed to 0 rows (layout change?)",
    "not_an_article": 0,
    "not_found": 0,
    "ok": 0,
